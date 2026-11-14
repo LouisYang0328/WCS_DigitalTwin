@@ -1,0 +1,53 @@
+/* The three top-level modules share the scene header without adding canvas UI. */
+.topbar{gap:24px;overflow:visible;}
+.topbar>.brand{flex-shrink:0;}
+.module-nav{display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.nav-module{position:relative;}
+.module-button{display:flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:7px 13px;border:1px solid transparent;border-radius:6px;background:transparent;color:#a9c0cf;font:500 12px/1.4 system-ui,"Microsoft YaHei",sans-serif;text-decoration:none;white-space:nowrap;cursor:pointer;list-style:none;transition:background .15s,border-color .15s,color .15s;}
+.module-button::-webkit-details-marker{display:none;}
+.module-button::marker{content:"";}
+.module-button>svg{width:16px;height:16px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;}
+.module-button>small{font-size:10px;font-weight:400;color:#81a7b9;margin-left:3px;}
+.module-button:hover,.nav-module[open]>.module-button{color:#f0f9fc;background:#203c4b;border-color:#46697c;}
+.module-button.active{color:#c5edf4;background:#214450;border-color:#467583;}
+.module-button:focus-visible,.module-popover button:focus-visible,.module-popover a:focus-visible{outline:2px solid #8fd5e5;outline-offset:3px;}
+.module-caret{width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);margin:0 2px 3px 4px;transition:transform .15s;}
+.nav-module[open] .module-caret{transform:rotate(225deg);margin-bottom:-2px;}
+.module-popover{position:absolute;left:0;top:calc(100% + 12px);z-index:25;width:300px;padding:7px;border:1px solid #476170;border-radius:9px;background:#152a37;box-shadow:0 18px 50px #020c16aa;color:#bed0dc;}
+.nav-module:not([open])>.module-popover{display:none;}
+.module-section{padding:10px;}
+.module-section+.module-section{border-top:1px solid #354e5e;}
+.module-section h3{font:500 10px/1.4 system-ui,"Microsoft YaHei",sans-serif;color:#8fa9bb;margin:0 0 9px;letter-spacing:.5px;}
+.module-section .seg{width:100%;padding:3px;}
+.module-section .seg button{flex:1;padding:7px 9px;font-size:11px;}
+.module-section .immersive-btn{width:100%;min-height:32px;text-align:left;padding:7px 10px;}
+.connection-popover{width:260px;padding:6px;}
+.module-option{display:grid;grid-template-columns:1fr auto;gap:3px 14px;align-items:center;padding:12px;border:1px solid transparent;border-radius:6px;text-decoration:none;color:#d2e6ef;}
+.module-option>strong{font-size:12px;font-weight:500;}
+.module-option>small{grid-column:1;font-size:10px;color:#8ba6ba;}
+.module-option>span{grid-column:2;grid-row:1/3;color:#76a8bd;font-size:15px;}
+.module-option:hover{border-color:#476c7e;background:#234152;}
+.module-nav>.dash-btn{background:transparent;border:1px solid transparent;box-shadow:none;color:#a9c0cf;font-size:12px;}
+.module-nav>.dash-btn:hover,.module-nav>.dash-btn[aria-expanded=true]{background:#203c4b;border-color:#46697c;color:#e2f8fd;}
+@media(max-width:1180px){.topbar{gap:16px;}.module-button{padding:7px 10px;}.module-button>[data-display-label]{display:none;}.module-nav{gap:4px;}}
+@media(max-width:900px){
+  .topbar{height:100px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:32px 42px;gap:2px 8px;padding:8px 14px;align-content:center;}
+  .topbar>.brand{grid-column:1;grid-row:1;width:auto;}
+  .topbar>.clock{grid-column:2;grid-row:1;display:block;}
+  .topbar>.spacer{display:none;}
+  .topbar>.module-nav{grid-column:1/-1;grid-row:2;justify-self:start;}
+  .module-button{min-height:35px;}
+  .panel{top:114px!important;}
+  .scene-caption{top:117px;}
+  .module-popover{top:calc(100% + 7px);}
+}
+@media(max-width:520px){
+  .module-nav{width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;}
+  .module-button{padding:7px 6px;font-size:11px;gap:5px;}
+  .module-button>svg{width:14px;height:14px;}
+  .module-nav>.dash-btn{font-size:11px;}
+  .module-caret{margin-left:1px;}
+  .display-popover{width:min(300px,calc(100vw - 28px));}
+  .connection-popover{left:50%;transform:translateX(-50%);width:min(260px,calc(100vw - 28px));}
+  .module-button>.module-caret{width:5px;height:5px;}
+}

@@ -1,0 +1,3213 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "id": "tc",
+      "name": "TC 堆垛机反馈",
+      "description": "依据 TC.xlsx 设备变量及功能模块拆解 4.3；仅含 PLC_* 的 29 个只读反馈信号。偏移相对于所配置的 DB 起始字节，采用 S7 大端 UInt16/UInt32；字节 62–63 保留。",
+      "defaultDbNumber": 2000,
+      "defaultStartAddress": 0,
+      "readLength": 70,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_HEARTBEAT",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "PLC心跳"
+        },
+        {
+          "name": "PLC_DEVICECODE",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "PLC堆垛机编号"
+        },
+        {
+          "name": "PLC_TUNNEL",
+          "offset": 4,
+          "dataType": "UInt16",
+          "description": "PLC当前巷道"
+        },
+        {
+          "name": "PLC_STARTPOSX",
+          "offset": 6,
+          "dataType": "UInt16",
+          "description": "PLC源排"
+        },
+        {
+          "name": "PLC_STARTPOSY",
+          "offset": 8,
+          "dataType": "UInt16",
+          "description": "PLC源列"
+        },
+        {
+          "name": "PLC_STARTPOSZ",
+          "offset": 10,
+          "dataType": "UInt16",
+          "description": "PLC源层"
+        },
+        {
+          "name": "PLC_ENDPOSX",
+          "offset": 12,
+          "dataType": "UInt16",
+          "description": "PLC目标排"
+        },
+        {
+          "name": "PLC_ENDPOSY",
+          "offset": 14,
+          "dataType": "UInt16",
+          "description": "PLC目标列"
+        },
+        {
+          "name": "PLC_ENDPOSZ",
+          "offset": 16,
+          "dataType": "UInt16",
+          "description": "PLC目标层"
+        },
+        {
+          "name": "PLC_TASKTYPE",
+          "offset": 18,
+          "dataType": "UInt16",
+          "description": "PLC任务类型1入2出3移库4站台移动"
+        },
+        {
+          "name": "PLC_TASK",
+          "offset": 20,
+          "dataType": "UInt32",
+          "description": "PLC当前任务号"
+        },
+        {
+          "name": "PLC_TASKEXE",
+          "offset": 24,
+          "dataType": "UInt16",
+          "description": "PLC执行反馈 1接受正常2数据异常"
+        },
+        {
+          "name": "PLC_ERROR",
+          "offset": 26,
+          "dataType": "UInt16",
+          "description": "PLC当前故障"
+        },
+        {
+          "name": "PLC_TRAYTYPE",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "PLC托盘类型1托盘2小车"
+        },
+        {
+          "name": "PLC_TASKFINISHSTATE",
+          "offset": 30,
+          "dataType": "UInt16",
+          "description": "PLC完成状态 1自动完成 2强制完成 3手动取消"
+        },
+        {
+          "name": "PLC_TASKABNORMALFEEDBACK",
+          "offset": 32,
+          "dataType": "UInt16",
+          "description": "PLC异常反馈1取货无货 2放货有货 3取深浅有 4放深浅有"
+        },
+        {
+          "name": "PLC_CLAIMGOODS",
+          "offset": 34,
+          "dataType": "UInt16",
+          "description": "PLC取货完成"
+        },
+        {
+          "name": "PLC_DISPATCH",
+          "offset": 36,
+          "dataType": "UInt16",
+          "description": "PLC准备就绪可调度"
+        },
+        {
+          "name": "PLC_LOAD",
+          "offset": 38,
+          "dataType": "UInt16",
+          "description": "PLC备用3"
+        },
+        {
+          "name": "PLC_PATTERN",
+          "offset": 40,
+          "dataType": "UInt16",
+          "description": "PLC联机状态1自动2手动3离线4维护"
+        },
+        {
+          "name": "PLC_VANSTATE",
+          "offset": 42,
+          "dataType": "UInt16",
+          "description": "PLC载货台有无货 1有货0无货"
+        },
+        {
+          "name": "PLC_POSX",
+          "offset": 44,
+          "dataType": "UInt16",
+          "description": "PLC当前排"
+        },
+        {
+          "name": "PLC_POSY",
+          "offset": 46,
+          "dataType": "UInt16",
+          "description": "PLC当前列"
+        },
+        {
+          "name": "PLC_POSZ",
+          "offset": 48,
+          "dataType": "UInt16",
+          "description": "PLC当前层"
+        },
+        {
+          "name": "PLC_LOCATX",
+          "offset": 50,
+          "dataType": "UInt32",
+          "description": "PLC行走当前值 mm"
+        },
+        {
+          "name": "PLC_LOCATY",
+          "offset": 54,
+          "dataType": "UInt32",
+          "description": "PLC提升当前值 mm"
+        },
+        {
+          "name": "PLC_LOCATZ",
+          "offset": 58,
+          "dataType": "UInt32",
+          "description": "PLC货叉当前值 mm"
+        },
+        {
+          "name": "PLC_RELEASEFINISH",
+          "offset": 64,
+          "dataType": "UInt16",
+          "description": "PLC放货完成1"
+        },
+        {
+          "name": "PLC_TASKNO",
+          "offset": 66,
+          "dataType": "UInt32",
+          "description": "PLC当前任务号"
+        }
+      ]
+    },
+    {
+      "id": "cv01-01",
+      "name": "CV01 1F 输送线 1–30",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 0,
+      "readLength": 772,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_HEART",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "心跳"
+        },
+        {
+          "name": "PLC_STATUS_STATE_101001",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101001",
+          "offset": 4,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101001",
+          "offset": 6,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101002",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101002",
+          "offset": 30,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101002",
+          "offset": 32,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101003",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101003",
+          "offset": 56,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101003",
+          "offset": 58,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101004",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101004",
+          "offset": 82,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101004",
+          "offset": 84,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101005",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101005",
+          "offset": 108,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101005",
+          "offset": 110,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101006",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101006",
+          "offset": 134,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101006",
+          "offset": 136,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101007",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101007",
+          "offset": 160,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101007",
+          "offset": 162,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101008",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101008",
+          "offset": 186,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101008",
+          "offset": 188,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101009",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101009",
+          "offset": 212,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101009",
+          "offset": 214,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101010",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101010",
+          "offset": 238,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101010",
+          "offset": 240,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101011",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101011",
+          "offset": 264,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101011",
+          "offset": 266,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101012",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101012",
+          "offset": 290,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101012",
+          "offset": 292,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101013",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101013",
+          "offset": 316,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101013",
+          "offset": 318,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101014",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101014",
+          "offset": 342,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101014",
+          "offset": 344,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101015",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101015",
+          "offset": 368,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101015",
+          "offset": 370,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101016",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101016",
+          "offset": 394,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101016",
+          "offset": 396,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101017",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101017",
+          "offset": 420,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101017",
+          "offset": 422,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101018",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101018",
+          "offset": 446,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101018",
+          "offset": 448,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101019",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101019",
+          "offset": 472,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101019",
+          "offset": 474,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101020",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101020",
+          "offset": 498,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101020",
+          "offset": 500,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101021",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101021",
+          "offset": 524,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101021",
+          "offset": 526,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101022",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101022",
+          "offset": 550,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101022",
+          "offset": 552,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101023",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101023",
+          "offset": 576,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101023",
+          "offset": 578,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101024",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101024",
+          "offset": 602,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101024",
+          "offset": 604,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101025",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101025",
+          "offset": 628,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101025",
+          "offset": 630,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101026",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101026",
+          "offset": 654,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101026",
+          "offset": 656,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101027",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101027",
+          "offset": 680,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101027",
+          "offset": 682,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101028",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101028",
+          "offset": 706,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101028",
+          "offset": 708,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101029",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101029",
+          "offset": 732,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101029",
+          "offset": 734,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101030",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101030",
+          "offset": 758,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101030",
+          "offset": 760,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    },
+    {
+      "id": "cv01-02",
+      "name": "CV01 1F 输送线 31–60",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 782,
+      "readLength": 770,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_STATE_101031",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101031",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101031",
+          "offset": 4,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101032",
+          "offset": 26,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101032",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101032",
+          "offset": 30,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101033",
+          "offset": 52,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101033",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101033",
+          "offset": 56,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101034",
+          "offset": 78,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101034",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101034",
+          "offset": 82,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101035",
+          "offset": 104,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101035",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101035",
+          "offset": 108,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101036",
+          "offset": 130,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101036",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101036",
+          "offset": 134,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101037",
+          "offset": 156,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101037",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101037",
+          "offset": 160,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101038",
+          "offset": 182,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101038",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101038",
+          "offset": 186,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101039",
+          "offset": 208,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101039",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101039",
+          "offset": 212,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101040",
+          "offset": 234,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101040",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101040",
+          "offset": 238,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101041",
+          "offset": 260,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101041",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101041",
+          "offset": 264,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101042",
+          "offset": 286,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101042",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101042",
+          "offset": 290,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101043",
+          "offset": 312,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101043",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101043",
+          "offset": 316,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101044",
+          "offset": 338,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101044",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101044",
+          "offset": 342,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101045",
+          "offset": 364,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101045",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101045",
+          "offset": 368,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101046",
+          "offset": 390,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101046",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101046",
+          "offset": 394,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101047",
+          "offset": 416,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101047",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101047",
+          "offset": 420,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101048",
+          "offset": 442,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101048",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101048",
+          "offset": 446,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101049",
+          "offset": 468,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101049",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101049",
+          "offset": 472,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101050",
+          "offset": 494,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101050",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101050",
+          "offset": 498,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101051",
+          "offset": 520,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101051",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101051",
+          "offset": 524,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101052",
+          "offset": 546,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101052",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101052",
+          "offset": 550,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101053",
+          "offset": 572,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101053",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101053",
+          "offset": 576,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101054",
+          "offset": 598,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101054",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101054",
+          "offset": 602,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101055",
+          "offset": 624,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101055",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101055",
+          "offset": 628,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101056",
+          "offset": 650,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101056",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101056",
+          "offset": 654,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101057",
+          "offset": 676,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101057",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101057",
+          "offset": 680,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101058",
+          "offset": 702,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101058",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101058",
+          "offset": 706,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101059",
+          "offset": 728,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101059",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101059",
+          "offset": 732,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101060",
+          "offset": 754,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101060",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101060",
+          "offset": 758,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    },
+    {
+      "id": "cv01-03",
+      "name": "CV01 1F 输送线 61–90",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 1562,
+      "readLength": 770,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_STATE_101061",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101061",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101061",
+          "offset": 4,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101062",
+          "offset": 26,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101062",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101062",
+          "offset": 30,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101063",
+          "offset": 52,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101063",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101063",
+          "offset": 56,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101064",
+          "offset": 78,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101064",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101064",
+          "offset": 82,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101065",
+          "offset": 104,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101065",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101065",
+          "offset": 108,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101066",
+          "offset": 130,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101066",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101066",
+          "offset": 134,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101067",
+          "offset": 156,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101067",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101067",
+          "offset": 160,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101068",
+          "offset": 182,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101068",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101068",
+          "offset": 186,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101069",
+          "offset": 208,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101069",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101069",
+          "offset": 212,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101070",
+          "offset": 234,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101070",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101070",
+          "offset": 238,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101071",
+          "offset": 260,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101071",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101071",
+          "offset": 264,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101072",
+          "offset": 286,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101072",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101072",
+          "offset": 290,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101073",
+          "offset": 312,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101073",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101073",
+          "offset": 316,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101074",
+          "offset": 338,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101074",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101074",
+          "offset": 342,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101075",
+          "offset": 364,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101075",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101075",
+          "offset": 368,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101076",
+          "offset": 390,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101076",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101076",
+          "offset": 394,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101077",
+          "offset": 416,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101077",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101077",
+          "offset": 420,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101078",
+          "offset": 442,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101078",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101078",
+          "offset": 446,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101079",
+          "offset": 468,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101079",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101079",
+          "offset": 472,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101080",
+          "offset": 494,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101080",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101080",
+          "offset": 498,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101081",
+          "offset": 520,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101081",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101081",
+          "offset": 524,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101082",
+          "offset": 546,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101082",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101082",
+          "offset": 550,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101083",
+          "offset": 572,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101083",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101083",
+          "offset": 576,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101084",
+          "offset": 598,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101084",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101084",
+          "offset": 602,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101085",
+          "offset": 624,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101085",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101085",
+          "offset": 628,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101086",
+          "offset": 650,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101086",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101086",
+          "offset": 654,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101087",
+          "offset": 676,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101087",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101087",
+          "offset": 680,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101088",
+          "offset": 702,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101088",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101088",
+          "offset": 706,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101089",
+          "offset": 728,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101089",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101089",
+          "offset": 732,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101090",
+          "offset": 754,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101090",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101090",
+          "offset": 758,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    },
+    {
+      "id": "cv01-04",
+      "name": "CV01 1F 输送线 91–100",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 2342,
+      "readLength": 250,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_STATE_101091",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101091",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101091",
+          "offset": 4,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101092",
+          "offset": 26,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101092",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101092",
+          "offset": 30,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101093",
+          "offset": 52,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101093",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101093",
+          "offset": 56,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101094",
+          "offset": 78,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101094",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101094",
+          "offset": 82,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101095",
+          "offset": 104,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101095",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101095",
+          "offset": 108,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101096",
+          "offset": 130,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101096",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101096",
+          "offset": 134,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101097",
+          "offset": 156,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101097",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101097",
+          "offset": 160,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101098",
+          "offset": 182,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101098",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101098",
+          "offset": 186,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101099",
+          "offset": 208,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101099",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101099",
+          "offset": 212,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101100",
+          "offset": 234,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101100",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101100",
+          "offset": 238,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    },
+    {
+      "id": "cv02-01",
+      "name": "CV02 2F 输送线 1–30",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 0,
+      "readLength": 772,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_HEART",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "心跳"
+        },
+        {
+          "name": "PLC_STATUS_STATE_202001",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202001",
+          "offset": 4,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202001",
+          "offset": 6,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202002",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202002",
+          "offset": 30,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202002",
+          "offset": 32,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202003",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202003",
+          "offset": 56,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202003",
+          "offset": 58,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202004",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202004",
+          "offset": 82,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202004",
+          "offset": 84,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202005",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202005",
+          "offset": 108,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202005",
+          "offset": 110,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202006",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202006",
+          "offset": 134,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202006",
+          "offset": 136,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202007",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202007",
+          "offset": 160,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202007",
+          "offset": 162,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202008",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202008",
+          "offset": 186,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202008",
+          "offset": 188,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202009",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202009",
+          "offset": 212,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202009",
+          "offset": 214,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202010",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202010",
+          "offset": 238,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202010",
+          "offset": 240,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202011",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202011",
+          "offset": 264,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202011",
+          "offset": 266,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202012",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202012",
+          "offset": 290,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202012",
+          "offset": 292,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202013",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202013",
+          "offset": 316,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202013",
+          "offset": 318,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202014",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202014",
+          "offset": 342,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202014",
+          "offset": 344,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202015",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202015",
+          "offset": 368,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202015",
+          "offset": 370,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202016",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202016",
+          "offset": 394,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202016",
+          "offset": 396,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202017",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202017",
+          "offset": 420,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202017",
+          "offset": 422,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202018",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202018",
+          "offset": 446,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202018",
+          "offset": 448,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202019",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202019",
+          "offset": 472,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202019",
+          "offset": 474,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202020",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202020",
+          "offset": 498,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202020",
+          "offset": 500,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202021",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202021",
+          "offset": 524,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202021",
+          "offset": 526,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202022",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202022",
+          "offset": 550,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202022",
+          "offset": 552,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202023",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202023",
+          "offset": 576,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202023",
+          "offset": 578,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202024",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202024",
+          "offset": 602,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202024",
+          "offset": 604,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202025",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202025",
+          "offset": 628,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202025",
+          "offset": 630,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202026",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202026",
+          "offset": 654,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202026",
+          "offset": 656,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202027",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202027",
+          "offset": 680,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202027",
+          "offset": 682,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202028",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202028",
+          "offset": 706,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202028",
+          "offset": 708,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202029",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202029",
+          "offset": 732,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202029",
+          "offset": 734,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202030",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202030",
+          "offset": 758,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202030",
+          "offset": 760,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    },
+    {
+      "id": "cv02-02",
+      "name": "CV02 2F 输送线 31–55",
+      "description": "原表DB600地址；本地模拟：状态0停止/1运行/2报警/3离线，占货0无/1有，条码S7 STRING[10] ASCII。现场枚举及编码待核。",
+      "defaultDbNumber": 600,
+      "defaultStartAddress": 782,
+      "readLength": 640,
+      "defaultPollIntervalMs": 500,
+      "tags": [
+        {
+          "name": "PLC_STATUS_STATE_202031",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202031",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202031",
+          "offset": 4,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202032",
+          "offset": 26,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202032",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202032",
+          "offset": 30,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202033",
+          "offset": 52,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202033",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202033",
+          "offset": 56,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202034",
+          "offset": 78,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202034",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202034",
+          "offset": 82,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202035",
+          "offset": 104,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202035",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202035",
+          "offset": 108,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202036",
+          "offset": 130,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202036",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202036",
+          "offset": 134,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202037",
+          "offset": 156,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202037",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202037",
+          "offset": 160,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202038",
+          "offset": 182,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202038",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202038",
+          "offset": 186,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202039",
+          "offset": 208,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202039",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202039",
+          "offset": 212,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202040",
+          "offset": 234,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202040",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202040",
+          "offset": 238,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202041",
+          "offset": 260,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202041",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202041",
+          "offset": 264,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202042",
+          "offset": 286,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202042",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202042",
+          "offset": 290,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202043",
+          "offset": 312,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202043",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202043",
+          "offset": 316,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202044",
+          "offset": 338,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202044",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202044",
+          "offset": 342,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202045",
+          "offset": 364,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202045",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202045",
+          "offset": 368,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202046",
+          "offset": 390,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202046",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202046",
+          "offset": 394,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202047",
+          "offset": 416,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202047",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202047",
+          "offset": 420,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202048",
+          "offset": 442,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202048",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202048",
+          "offset": 446,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202049",
+          "offset": 468,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202049",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202049",
+          "offset": 472,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202050",
+          "offset": 494,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202050",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202050",
+          "offset": 498,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202051",
+          "offset": 520,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202051",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202051",
+          "offset": 524,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202052",
+          "offset": 546,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202052",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202052",
+          "offset": 550,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202053",
+          "offset": 572,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202053",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202053",
+          "offset": 576,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202054",
+          "offset": 598,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202054",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202054",
+          "offset": 602,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202055",
+          "offset": 624,
+          "dataType": "UInt16",
+          "description": "设备状态"
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202055",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "有无货状态"
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202055",
+          "offset": 628,
+          "dataType": "String",
+          "description": "托盘条码",
+          "length": 10
+        }
+      ]
+    }
+  ]
+}

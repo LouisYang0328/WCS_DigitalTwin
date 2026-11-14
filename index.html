@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WCS 数字孪生 · 三维现场</title>
+<link rel="stylesheet" href="assets/css/twin.css">
+<link rel="stylesheet" href="assets/css/module-navigation.css">
+</head>
+<body>
+<div id="boot" aria-hidden="true">
+  <div class="boot-mark"></div>
+  <div class="boot-text">WCS 数字孪生</div>
+  <div class="boot-sub" id="bootSub">正在加载三维现场</div>
+  <div class="boot-bar"><i></i></div>
+</div>
+<div id="stage"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="mark"></span>
+    WCS 数字孪生 <span class="brand-context">三维现场</span>
+    <span class="sub">1F / 2F · 5 巷道 · 共用 TC01–TC05</span>
+  </div>
+  <nav class="module-nav" aria-label="功能模块">
+    <details class="nav-module" data-module="display">
+      <summary class="module-button active" id="displayModuleSummary" aria-controls="displayModulePanel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
+        <span>页面展示</span><small data-display-label>双层 · 总览</small><i class="module-caret" aria-hidden="true"></i>
+      </summary>
+      <div class="module-popover display-popover" id="displayModulePanel">
+        <div class="module-section">
+          <h3>楼层展示</h3>
+          <div class="seg" id="floorTabs" role="group" aria-label="楼层展示">
+            <button type="button" data-mode="1" data-close-module>一层</button>
+            <button type="button" data-mode="2" data-close-module>二层</button>
+            <button type="button" class="on" data-mode="3" data-close-module title="1F 在下、2F 在上，同一平面位置上下叠放">双层</button>
+          </div>
+        </div>
+        <div class="module-section">
+          <h3>观察视角</h3>
+          <div class="seg" id="viewBtns" role="group" aria-label="观察视角">
+            <button type="button" class="on" data-view="overview" data-close-module>总览</button>
+            <button type="button" data-view="top" data-close-module>俯视</button>
+            <button type="button" data-view="aisle" data-close-module>巷道</button>
+            <button type="button" data-view="walk" data-close-module>现场</button>
+          </div>
+        </div>
+        <div class="module-section module-display-options">
+          <button class="immersive-btn" id="btnImmersive" type="button" aria-pressed="false" title="收起侧栏，放大三维场景">沉浸视图</button>
+        </div>
+      </div>
+    </details>
+    <details class="nav-module" data-module="connections">
+      <summary class="module-button" aria-controls="connectionModulePanel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v5m8-5v5M6 8h12v3a6 6 0 0 1-6 6v4M6 11H3m18 0h-3"/></svg>
+        <span>设备连接</span><i class="module-caret" aria-hidden="true"></i>
+      </summary>
+      <div class="module-popover connection-popover" id="connectionModulePanel">
+        <a class="module-option" href="devices.html"><strong>真实 PLC</strong><small>配置现场设备与 DB 点位</small><span aria-hidden="true">↗</span></a>
+        <a class="module-option" href="simulator.html"><strong>模拟 PLC</strong><small>本机信号输入与演示</small><span aria-hidden="true">↗</span></a>
+      </div>
+    </details>
+    <button class="module-button dash-btn" id="btnDash" type="button" title="打开任务 / 库位 / 报警数据看板" aria-controls="dash" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V10M9.5 19V5M15 19v-6M20 19V8"/></svg>
+      <span>数据看板</span>
+    </button>
+  </nav>
+  <div class="spacer"></div>
+  <div class="live"><i></i><span id="linkText">WCS 数据链路 · 模拟</span></div>
+  <div class="clock" id="clock">00:00:00</div>
+</header>
+
+<aside class="panel left">
+  <div class="panel-head"><h2>仓库概况</h2><span class="tag" id="floorTag">1F</span></div>
+  <div class="panel-body">
+    <div class="kpis">
+      <div class="kpi"><div class="k">库位总数</div><div class="v" id="kpiTotal">600</div></div>
+      <div class="kpi"><div class="k">库位占用率</div><div class="v" id="kpiOcc">--<small>%</small></div></div>
+      <div class="kpi"><div class="k">运行任务</div><div class="v" id="kpiTask">0</div></div>
+      <div class="kpi" id="kpiAlarmBox"><div class="k">共享设备报警</div><div class="v" id="kpiAlarm">0</div></div>
+    </div>
+
+    <div class="sect-title"><b>全部输送设备</b><span id="deviceCount"></span></div>
+    <input class="device-search" id="deviceSearch" type="search" placeholder="输入编号定位，如 1074 / 2056" aria-label="搜索输送设备编号">
+    <div class="device-index" id="deviceIndex"></div>
+
+    <div class="sect-title"><b>巷道负载</b><span>占用率</span></div>
+    <div class="list" id="aisleList"></div>
+
+    <div class="sect-title"><b>巷道口输送段</b><span id="lineFloorTag">1F</span></div>
+    <div class="line-map" id="lineMap"></div>
+
+    <div class="sect-title"><b>运行控制</b><span id="speedTag">1.0×</span></div>
+    <div class="ctrl">
+      <button class="btn" id="btnPause">暂停仿真</button>
+      <button class="btn" id="btnAlarm">模拟报警</button>
+    </div>
+    <div class="ctrl">
+      <button class="btn" id="btnSpeed">速度 1×</button>
+      <button class="btn" id="btnReset">重置视角</button>
+    </div>
+  </div>
+</aside>
+
+<aside class="panel right">
+  <div class="panel-head"><h2>选中对象</h2><span class="tag">点击设备 / 库位</span></div>
+  <div class="panel-body">
+    <div class="sel-card" id="selCard">点击输送设备、堆垛机或货架库位查看详情，也可输入设备编号定位。</div>
+
+    <div class="sect-title"><b>实时任务</b><span>最近 7 条</span></div>
+    <div class="list" id="taskList"><div class="empty">等待 WCS 下发任务…</div></div>
+
+    <div class="sect-title"><b>报警记录</b><span>最近 5 条</span></div>
+    <div class="list" id="alarmList"><div class="empty">暂无报警</div></div>
+
+    <div class="sect-title"><b>状态图例</b><span>与图纸一致</span></div>
+    <div class="legend">
+      <div><i style="background:#22c55e"></i>自动运行</div>
+      <div><i style="background:#eab308"></i>任务中 / 暂停</div>
+      <div><i style="background:#ef4444"></i>报警</div>
+      <div><i style="background:#c2b19b"></i>托盘货物　<i style="background:#dfe6ef;margin-left:8px"></i>透空库位</div>
+    </div>
+  </div>
+</aside>
+
+<!-- ==================== 数据看板 · 任务 / 库位 / 报警 ==================== -->
+<section class="dash" id="dash" aria-label="WCS 任务库位报警数据看板">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 4-6 5 4"/><path d="M3 21h18"/></symbol>
+    <symbol id="i-bar" viewBox="0 0 24 24"><path d="M4 20V11M9.5 20V5M15 20v-6M20.5 20V9"/></symbol>
+    <symbol id="i-pie" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7.5 5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 2v2M14 2v2M10 20v2M14 20v2M2 10h2M2 14h2M20 10h2M20 14h2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l8.5 15h-17L12 4Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+  </svg>
+
+  <header class="dash-top">
+    <div class="dash-brand">
+      <span class="db-mark"></span>
+      <h2>WCS 数字孪生 · 任务库位报警</h2>
+      <span class="db-tag" id="dashScope">A01–A05 · 库位</span>
+    </div>
+    <nav class="dash-nav" id="dashNav">
+      <button class="on" type="button" data-domain="all">总览</button>
+      <button type="button" data-domain="task">任务</button>
+      <button type="button" data-domain="cell">库位</button>
+      <button type="button" data-domain="alarm">报警</button>
+    </nav>
+    <div class="dash-spacer"></div>
+    <div class="dash-sync"><i></i>模拟链路 <b id="dashUpd">--:--:--</b> 更新</div>
+    <div class="dash-clock"><b id="dashTime">00:00:00</b><span id="dashDate">----</span></div>
+    <button class="dash-back" id="dashBack" type="button">← 返回孪生</button>
+  </header>
+
+  <div class="dash-grid">
+    <!-- 左列：任务 -->
+    <div class="dash-col left">
+      <section class="dash-panel" data-domain="task" style="flex:1.14">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-bar"/></svg></span>
+          <h3>任务总览</h3>
+          <span class="p-tag" id="dashTaskTag">今日</span>
+        </div>
+        <div class="p-body"><div class="dash-kpis" id="dashTaskKpis"></div></div>
+      </section>
+
+      <section class="dash-panel" data-domain="task" style="flex:1.4">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-trend"/></svg></span>
+          <h3>任务趋势</h3>
+          <span class="p-tag">近 7 天 · 均节拍 <b id="dashCycle">--</b></span>
+        </div>
+        <div class="p-body"><div class="chart" id="chartTaskTrend"></div></div>
+      </section>
+
+      <section class="dash-panel" data-domain="task" style="flex:1.06">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-pie"/></svg></span>
+          <h3>任务类型占比</h3>
+          <span class="p-tag">入库 / 出库 / 移库</span>
+        </div>
+        <div class="p-body"><div class="chart" id="chartTaskType"></div></div>
+      </section>
+    </div>
+
+    <!-- 中列：库位矩阵 + 实时告警 + 设备状态 -->
+    <div class="dash-col">
+      <section class="dash-panel" data-domain="cell" style="flex:1.5">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-grid"/></svg></span>
+          <h3>库位占用矩阵</h3>
+          <span class="p-tag">巷道 A01–A05 × 货架层 1–10（1F 1–5 / 2F 6–10）</span>
+        </div>
+        <div class="p-body"><div class="chart" id="chartCellHeat"></div></div>
+      </section>
+
+      <div class="dash-subgrid">
+        <section class="dash-panel" data-domain="alarm">
+          <div class="p-head">
+            <span class="p-ico"><svg><use href="#i-list"/></svg></span>
+            <h3>实时告警</h3>
+            <span class="p-tag">最近 8 条 · 点击定位</span>
+          </div>
+          <div class="p-body">
+            <div class="d-table-wrap">
+              <table class="d-table">
+                <thead><tr><th>时间</th><th>设备 / 库位</th><th>告警内容</th><th>状态</th></tr></thead>
+                <tbody id="dashAlarmBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="dash-panel" data-domain="alarm">
+          <div class="p-head">
+            <span class="p-ico"><svg><use href="#i-cpu"/></svg></span>
+            <h3>设备运行状态</h3>
+            <span class="p-tag" id="dashDevTag">全库设备</span>
+          </div>
+          <div class="p-body"><div class="chart" id="chartDeviceState"></div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- 右列：库位数据 / 报警数据 / 成因 -->
+    <div class="dash-col right">
+      <section class="dash-panel" data-domain="cell" style="flex:1.2">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-cube"/></svg></span>
+          <h3>库位数据</h3>
+          <span class="p-tag">1F + 2F</span>
+        </div>
+        <div class="p-body">
+          <div class="d-cells" id="dashCellStats"></div>
+          <div class="d-subtitle"><span>巷道占用率</span><b>A01 – A05</b></div>
+          <div class="chart" id="chartCellAisle"></div>
+        </div>
+      </section>
+
+      <section class="dash-panel" data-domain="alarm" style="flex:1.34">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-alert"/></svg></span>
+          <h3>报警数据</h3>
+          <span class="p-tag">今日 / 较昨日</span>
+        </div>
+        <div class="p-body">
+          <div class="d-ringtop">
+            <div class="d-ring" id="chartAlarmRing"></div>
+            <div class="d-ringstats" id="dashAlarmStats"></div>
+          </div>
+          <div class="d-subtitle"><span>报警趋势</span><b>按等级 · 近 7 天</b></div>
+          <div class="chart" id="chartAlarmTrend"></div>
+        </div>
+      </section>
+
+      <section class="dash-panel" data-domain="alarm" style="flex:.96">
+        <div class="p-head">
+          <span class="p-ico"><svg><use href="#i-bar"/></svg></span>
+          <h3>报警成因 TOP5</h3>
+          <span class="p-tag">今日累计</span>
+        </div>
+        <div class="p-body"><div class="d-reasons" id="dashReasons"></div></div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<div class="scene-tools">
+  <div class="scene-caption" id="sceneCaption"></div>
+  <div class="scene-options">
+    <button type="button" id="inspectCrane" title="查看堆垛机的轮组、立柱和升降机构">堆垛机特写</button>
+    <button type="button" id="inspectRack" title="隐藏货物并查看货架钢结构">货架结构</button>
+    <button type="button" id="inspectConveyor" title="查看滚筒、链传动、驱动电机和支腿">输送线特写</button>
+    <label><input type="checkbox" id="showInventory" checked>货物</label>
+    <label><input type="checkbox" id="showDeviceLabels">编号</label>
+  </div>
+</div>
+<div class="render-toolbar" aria-label="场景显示设置">
+  <label for="qualitySelector">画质</label>
+  <select id="qualitySelector"><option value="performance">流畅</option><option value="balanced" selected>均衡</option><option value="high">精细</option></select>
+  <label class="environment-toggle"><input type="checkbox" id="showEnvironment" checked>厂房环境</label>
+  <span id="renderStats">场景加载中</span>
+</div>
+<div class="footer-note">左键旋转 · 滚轮缩放 · 右键平移 <span>设备运动 · 仿真</span></div>
+
+<!-- 三维引擎按顺序装载：先让页面壳与加载层画出来，再解析 1.6MB 脚本，
+     避免首屏被同步脚本解析阻塞成白屏。echarts 改为打开数据看板时按需加载。 -->
+<script>
+(function () {
+  var files = [
+    'assets/three.min.js',
+    'assets/conveyor-layout.js',
+    'assets/conveyor-s7-mapping.js',
+    'assets/js/equipment/rack-model.js',
+    'assets/js/equipment/crane-model.js',
+    'assets/js/equipment/inventory-model.js',
+    'assets/js/equipment/conveyor-model.js',
+    'assets/js/equipment/conveyor-load.js',
+    'assets/js/equipment/pallet-magazine.js',
+    'assets/js/equipment/warehouse-lighting.js',
+    'assets/js/equipment/warehouse-environment.js',
+    'assets/vendor/three-postfx.min.js',
+    'assets/js/rendering/postprocessing.js',
+    'assets/js/api-client.js',
+    'assets/js/legacy/twin-scene-legacy.js',
+    'assets/js/module-navigation.js'
+  ];
+  var index = 0;
+  function next() {
+    if (index >= files.length) return;
+    var script = document.createElement('script');
+    script.src = files[index++];
+    script.async = false;
+    script.onload = next;
+    script.onerror = function () {
+      if (window.console) console.error('模块加载失败: ' + script.src);
+      next();
+    };
+    document.head.appendChild(script);
+  }
+  function start() {
+    // 两帧之后再装载，确保加载层已经上屏，用户不会看到白屏。
+    requestAnimationFrame(function () { requestAnimationFrame(function () { setTimeout(next, 0); }); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+</body>
+</html>

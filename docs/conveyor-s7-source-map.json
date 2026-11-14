@@ -1,0 +1,5158 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "equipmentCode": "CV01",
+      "floor": 1,
+      "sourceFile": "C:\\Users\\HCGC\\Desktop\\1FINFO.xlsx",
+      "sourceSheet": "设备变量",
+      "sourceRange": "A2:I302",
+      "bindings": [
+        {
+          "id": "1001",
+          "sourceId": "101001",
+          "stateTag": "PLC_STATUS_STATE_101001",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101001",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101001",
+          "mapped": true
+        },
+        {
+          "id": "1002",
+          "sourceId": "101002",
+          "stateTag": "PLC_STATUS_STATE_101002",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101002",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101002",
+          "mapped": true
+        },
+        {
+          "id": "1003",
+          "sourceId": "101003",
+          "stateTag": "PLC_STATUS_STATE_101003",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101003",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101003",
+          "mapped": true
+        },
+        {
+          "id": "1004",
+          "sourceId": "101004",
+          "stateTag": "PLC_STATUS_STATE_101004",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101004",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101004",
+          "mapped": true
+        },
+        {
+          "id": "1005",
+          "sourceId": "101005",
+          "stateTag": "PLC_STATUS_STATE_101005",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101005",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101005",
+          "mapped": false
+        },
+        {
+          "id": "1006",
+          "sourceId": "101006",
+          "stateTag": "PLC_STATUS_STATE_101006",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101006",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101006",
+          "mapped": true
+        },
+        {
+          "id": "1007",
+          "sourceId": "101007",
+          "stateTag": "PLC_STATUS_STATE_101007",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101007",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101007",
+          "mapped": true
+        },
+        {
+          "id": "1008",
+          "sourceId": "101008",
+          "stateTag": "PLC_STATUS_STATE_101008",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101008",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101008",
+          "mapped": true
+        },
+        {
+          "id": "1009",
+          "sourceId": "101009",
+          "stateTag": "PLC_STATUS_STATE_101009",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101009",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101009",
+          "mapped": true
+        },
+        {
+          "id": "1010",
+          "sourceId": "101010",
+          "stateTag": "PLC_STATUS_STATE_101010",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101010",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101010",
+          "mapped": true
+        },
+        {
+          "id": "1011",
+          "sourceId": "101011",
+          "stateTag": "PLC_STATUS_STATE_101011",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101011",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101011",
+          "mapped": true
+        },
+        {
+          "id": "1012",
+          "sourceId": "101012",
+          "stateTag": "PLC_STATUS_STATE_101012",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101012",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101012",
+          "mapped": true
+        },
+        {
+          "id": "1013",
+          "sourceId": "101013",
+          "stateTag": "PLC_STATUS_STATE_101013",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101013",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101013",
+          "mapped": true
+        },
+        {
+          "id": "1014",
+          "sourceId": "101014",
+          "stateTag": "PLC_STATUS_STATE_101014",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101014",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101014",
+          "mapped": true
+        },
+        {
+          "id": "1015",
+          "sourceId": "101015",
+          "stateTag": "PLC_STATUS_STATE_101015",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101015",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101015",
+          "mapped": true
+        },
+        {
+          "id": "1016",
+          "sourceId": "101016",
+          "stateTag": "PLC_STATUS_STATE_101016",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101016",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101016",
+          "mapped": true
+        },
+        {
+          "id": "1017",
+          "sourceId": "101017",
+          "stateTag": "PLC_STATUS_STATE_101017",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101017",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101017",
+          "mapped": true
+        },
+        {
+          "id": "1018",
+          "sourceId": "101018",
+          "stateTag": "PLC_STATUS_STATE_101018",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101018",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101018",
+          "mapped": true
+        },
+        {
+          "id": "1019",
+          "sourceId": "101019",
+          "stateTag": "PLC_STATUS_STATE_101019",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101019",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101019",
+          "mapped": true
+        },
+        {
+          "id": "1020",
+          "sourceId": "101020",
+          "stateTag": "PLC_STATUS_STATE_101020",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101020",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101020",
+          "mapped": true
+        },
+        {
+          "id": "1021",
+          "sourceId": "101021",
+          "stateTag": "PLC_STATUS_STATE_101021",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101021",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101021",
+          "mapped": true
+        },
+        {
+          "id": "1022",
+          "sourceId": "101022",
+          "stateTag": "PLC_STATUS_STATE_101022",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101022",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101022",
+          "mapped": true
+        },
+        {
+          "id": "1023",
+          "sourceId": "101023",
+          "stateTag": "PLC_STATUS_STATE_101023",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101023",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101023",
+          "mapped": true
+        },
+        {
+          "id": "1024",
+          "sourceId": "101024",
+          "stateTag": "PLC_STATUS_STATE_101024",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101024",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101024",
+          "mapped": true
+        },
+        {
+          "id": "1025",
+          "sourceId": "101025",
+          "stateTag": "PLC_STATUS_STATE_101025",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101025",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101025",
+          "mapped": true
+        },
+        {
+          "id": "1026",
+          "sourceId": "101026",
+          "stateTag": "PLC_STATUS_STATE_101026",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101026",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101026",
+          "mapped": true
+        },
+        {
+          "id": "1027",
+          "sourceId": "101027",
+          "stateTag": "PLC_STATUS_STATE_101027",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101027",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101027",
+          "mapped": true
+        },
+        {
+          "id": "1028",
+          "sourceId": "101028",
+          "stateTag": "PLC_STATUS_STATE_101028",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101028",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101028",
+          "mapped": true
+        },
+        {
+          "id": "1029",
+          "sourceId": "101029",
+          "stateTag": "PLC_STATUS_STATE_101029",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101029",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101029",
+          "mapped": true
+        },
+        {
+          "id": "1030",
+          "sourceId": "101030",
+          "stateTag": "PLC_STATUS_STATE_101030",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101030",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101030",
+          "mapped": false
+        },
+        {
+          "id": "1031",
+          "sourceId": "101031",
+          "stateTag": "PLC_STATUS_STATE_101031",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101031",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101031",
+          "mapped": true
+        },
+        {
+          "id": "1032",
+          "sourceId": "101032",
+          "stateTag": "PLC_STATUS_STATE_101032",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101032",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101032",
+          "mapped": true
+        },
+        {
+          "id": "1033",
+          "sourceId": "101033",
+          "stateTag": "PLC_STATUS_STATE_101033",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101033",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101033",
+          "mapped": true
+        },
+        {
+          "id": "1034",
+          "sourceId": "101034",
+          "stateTag": "PLC_STATUS_STATE_101034",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101034",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101034",
+          "mapped": true
+        },
+        {
+          "id": "1035",
+          "sourceId": "101035",
+          "stateTag": "PLC_STATUS_STATE_101035",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101035",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101035",
+          "mapped": true
+        },
+        {
+          "id": "1036",
+          "sourceId": "101036",
+          "stateTag": "PLC_STATUS_STATE_101036",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101036",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101036",
+          "mapped": true
+        },
+        {
+          "id": "1037",
+          "sourceId": "101037",
+          "stateTag": "PLC_STATUS_STATE_101037",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101037",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101037",
+          "mapped": true
+        },
+        {
+          "id": "1038",
+          "sourceId": "101038",
+          "stateTag": "PLC_STATUS_STATE_101038",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101038",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101038",
+          "mapped": true
+        },
+        {
+          "id": "1039",
+          "sourceId": "101039",
+          "stateTag": "PLC_STATUS_STATE_101039",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101039",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101039",
+          "mapped": true
+        },
+        {
+          "id": "1040",
+          "sourceId": "101040",
+          "stateTag": "PLC_STATUS_STATE_101040",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101040",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101040",
+          "mapped": true
+        },
+        {
+          "id": "1041",
+          "sourceId": "101041",
+          "stateTag": "PLC_STATUS_STATE_101041",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101041",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101041",
+          "mapped": true
+        },
+        {
+          "id": "1042",
+          "sourceId": "101042",
+          "stateTag": "PLC_STATUS_STATE_101042",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101042",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101042",
+          "mapped": true
+        },
+        {
+          "id": "1043",
+          "sourceId": "101043",
+          "stateTag": "PLC_STATUS_STATE_101043",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101043",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101043",
+          "mapped": true
+        },
+        {
+          "id": "1044",
+          "sourceId": "101044",
+          "stateTag": "PLC_STATUS_STATE_101044",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101044",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101044",
+          "mapped": true
+        },
+        {
+          "id": "1045",
+          "sourceId": "101045",
+          "stateTag": "PLC_STATUS_STATE_101045",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101045",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101045",
+          "mapped": true
+        },
+        {
+          "id": "1046",
+          "sourceId": "101046",
+          "stateTag": "PLC_STATUS_STATE_101046",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101046",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101046",
+          "mapped": true
+        },
+        {
+          "id": "1047",
+          "sourceId": "101047",
+          "stateTag": "PLC_STATUS_STATE_101047",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101047",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101047",
+          "mapped": true
+        },
+        {
+          "id": "1048",
+          "sourceId": "101048",
+          "stateTag": "PLC_STATUS_STATE_101048",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101048",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101048",
+          "mapped": true
+        },
+        {
+          "id": "1049",
+          "sourceId": "101049",
+          "stateTag": "PLC_STATUS_STATE_101049",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101049",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101049",
+          "mapped": true
+        },
+        {
+          "id": "1050",
+          "sourceId": "101050",
+          "stateTag": "PLC_STATUS_STATE_101050",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101050",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101050",
+          "mapped": true
+        },
+        {
+          "id": "1051",
+          "sourceId": "101051",
+          "stateTag": "PLC_STATUS_STATE_101051",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101051",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101051",
+          "mapped": true
+        },
+        {
+          "id": "1052",
+          "sourceId": "101052",
+          "stateTag": "PLC_STATUS_STATE_101052",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101052",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101052",
+          "mapped": false
+        },
+        {
+          "id": "1053",
+          "sourceId": "101053",
+          "stateTag": "PLC_STATUS_STATE_101053",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101053",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101053",
+          "mapped": true
+        },
+        {
+          "id": "1054",
+          "sourceId": "101054",
+          "stateTag": "PLC_STATUS_STATE_101054",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101054",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101054",
+          "mapped": true
+        },
+        {
+          "id": "1055",
+          "sourceId": "101055",
+          "stateTag": "PLC_STATUS_STATE_101055",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101055",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101055",
+          "mapped": true
+        },
+        {
+          "id": "1056",
+          "sourceId": "101056",
+          "stateTag": "PLC_STATUS_STATE_101056",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101056",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101056",
+          "mapped": true
+        },
+        {
+          "id": "1057",
+          "sourceId": "101057",
+          "stateTag": "PLC_STATUS_STATE_101057",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101057",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101057",
+          "mapped": true
+        },
+        {
+          "id": "1058",
+          "sourceId": "101058",
+          "stateTag": "PLC_STATUS_STATE_101058",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101058",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101058",
+          "mapped": true
+        },
+        {
+          "id": "1059",
+          "sourceId": "101059",
+          "stateTag": "PLC_STATUS_STATE_101059",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101059",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101059",
+          "mapped": true
+        },
+        {
+          "id": "1060",
+          "sourceId": "101060",
+          "stateTag": "PLC_STATUS_STATE_101060",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101060",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101060",
+          "mapped": true
+        },
+        {
+          "id": "1061",
+          "sourceId": "101061",
+          "stateTag": "PLC_STATUS_STATE_101061",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101061",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101061",
+          "mapped": true
+        },
+        {
+          "id": "1062",
+          "sourceId": "101062",
+          "stateTag": "PLC_STATUS_STATE_101062",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101062",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101062",
+          "mapped": true
+        },
+        {
+          "id": "1063",
+          "sourceId": "101063",
+          "stateTag": "PLC_STATUS_STATE_101063",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101063",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101063",
+          "mapped": true
+        },
+        {
+          "id": "1064",
+          "sourceId": "101064",
+          "stateTag": "PLC_STATUS_STATE_101064",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101064",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101064",
+          "mapped": true
+        },
+        {
+          "id": "1065",
+          "sourceId": "101065",
+          "stateTag": "PLC_STATUS_STATE_101065",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101065",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101065",
+          "mapped": true
+        },
+        {
+          "id": "1066",
+          "sourceId": "101066",
+          "stateTag": "PLC_STATUS_STATE_101066",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101066",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101066",
+          "mapped": true
+        },
+        {
+          "id": "1067",
+          "sourceId": "101067",
+          "stateTag": "PLC_STATUS_STATE_101067",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101067",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101067",
+          "mapped": true
+        },
+        {
+          "id": "1068",
+          "sourceId": "101068",
+          "stateTag": "PLC_STATUS_STATE_101068",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101068",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101068",
+          "mapped": true
+        },
+        {
+          "id": "1069",
+          "sourceId": "101069",
+          "stateTag": "PLC_STATUS_STATE_101069",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101069",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101069",
+          "mapped": true
+        },
+        {
+          "id": "1070",
+          "sourceId": "101070",
+          "stateTag": "PLC_STATUS_STATE_101070",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101070",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101070",
+          "mapped": true
+        },
+        {
+          "id": "1071",
+          "sourceId": "101071",
+          "stateTag": "PLC_STATUS_STATE_101071",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101071",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101071",
+          "mapped": true
+        },
+        {
+          "id": "1072",
+          "sourceId": "101072",
+          "stateTag": "PLC_STATUS_STATE_101072",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101072",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101072",
+          "mapped": true
+        },
+        {
+          "id": "1073",
+          "sourceId": "101073",
+          "stateTag": "PLC_STATUS_STATE_101073",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101073",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101073",
+          "mapped": true
+        },
+        {
+          "id": "1074",
+          "sourceId": "101074",
+          "stateTag": "PLC_STATUS_STATE_101074",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101074",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101074",
+          "mapped": true
+        },
+        {
+          "id": "1075",
+          "sourceId": "101075",
+          "stateTag": "PLC_STATUS_STATE_101075",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101075",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101075",
+          "mapped": true
+        },
+        {
+          "id": "1076",
+          "sourceId": "101076",
+          "stateTag": "PLC_STATUS_STATE_101076",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101076",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101076",
+          "mapped": true
+        },
+        {
+          "id": "1077",
+          "sourceId": "101077",
+          "stateTag": "PLC_STATUS_STATE_101077",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101077",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101077",
+          "mapped": true
+        },
+        {
+          "id": "1078",
+          "sourceId": "101078",
+          "stateTag": "PLC_STATUS_STATE_101078",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101078",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101078",
+          "mapped": true
+        },
+        {
+          "id": "1079",
+          "sourceId": "101079",
+          "stateTag": "PLC_STATUS_STATE_101079",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101079",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101079",
+          "mapped": true
+        },
+        {
+          "id": "1080",
+          "sourceId": "101080",
+          "stateTag": "PLC_STATUS_STATE_101080",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101080",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101080",
+          "mapped": true
+        },
+        {
+          "id": "1081",
+          "sourceId": "101081",
+          "stateTag": "PLC_STATUS_STATE_101081",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101081",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101081",
+          "mapped": true
+        },
+        {
+          "id": "1082",
+          "sourceId": "101082",
+          "stateTag": "PLC_STATUS_STATE_101082",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101082",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101082",
+          "mapped": true
+        },
+        {
+          "id": "1083",
+          "sourceId": "101083",
+          "stateTag": "PLC_STATUS_STATE_101083",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101083",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101083",
+          "mapped": true
+        },
+        {
+          "id": "1084",
+          "sourceId": "101084",
+          "stateTag": "PLC_STATUS_STATE_101084",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101084",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101084",
+          "mapped": true
+        },
+        {
+          "id": "1085",
+          "sourceId": "101085",
+          "stateTag": "PLC_STATUS_STATE_101085",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101085",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101085",
+          "mapped": true
+        },
+        {
+          "id": "1086",
+          "sourceId": "101086",
+          "stateTag": "PLC_STATUS_STATE_101086",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101086",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101086",
+          "mapped": true
+        },
+        {
+          "id": "1087",
+          "sourceId": "101087",
+          "stateTag": "PLC_STATUS_STATE_101087",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101087",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101087",
+          "mapped": true
+        },
+        {
+          "id": "1088",
+          "sourceId": "101088",
+          "stateTag": "PLC_STATUS_STATE_101088",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101088",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101088",
+          "mapped": true
+        },
+        {
+          "id": "1089",
+          "sourceId": "101089",
+          "stateTag": "PLC_STATUS_STATE_101089",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101089",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101089",
+          "mapped": true
+        },
+        {
+          "id": "1090",
+          "sourceId": "101090",
+          "stateTag": "PLC_STATUS_STATE_101090",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101090",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101090",
+          "mapped": true
+        },
+        {
+          "id": "1091",
+          "sourceId": "101091",
+          "stateTag": "PLC_STATUS_STATE_101091",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101091",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101091",
+          "mapped": true
+        },
+        {
+          "id": "1092",
+          "sourceId": "101092",
+          "stateTag": "PLC_STATUS_STATE_101092",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101092",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101092",
+          "mapped": true
+        },
+        {
+          "id": "1093",
+          "sourceId": "101093",
+          "stateTag": "PLC_STATUS_STATE_101093",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101093",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101093",
+          "mapped": true
+        },
+        {
+          "id": "1094",
+          "sourceId": "101094",
+          "stateTag": "PLC_STATUS_STATE_101094",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101094",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101094",
+          "mapped": true
+        },
+        {
+          "id": "1095",
+          "sourceId": "101095",
+          "stateTag": "PLC_STATUS_STATE_101095",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101095",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101095",
+          "mapped": true
+        },
+        {
+          "id": "1096",
+          "sourceId": "101096",
+          "stateTag": "PLC_STATUS_STATE_101096",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101096",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101096",
+          "mapped": true
+        },
+        {
+          "id": "1097",
+          "sourceId": "101097",
+          "stateTag": "PLC_STATUS_STATE_101097",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101097",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101097",
+          "mapped": true
+        },
+        {
+          "id": "1098",
+          "sourceId": "101098",
+          "stateTag": "PLC_STATUS_STATE_101098",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101098",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101098",
+          "mapped": false
+        },
+        {
+          "id": "1099",
+          "sourceId": "101099",
+          "stateTag": "PLC_STATUS_STATE_101099",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101099",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101099",
+          "mapped": true
+        },
+        {
+          "id": "1100",
+          "sourceId": "101100",
+          "stateTag": "PLC_STATUS_STATE_101100",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_101100",
+          "trayCodeTag": "PLC_STATUS_CONTNO_101100",
+          "mapped": true
+        }
+      ],
+      "tags": [
+        {
+          "name": "PLC_STATUS_HEART",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "心跳",
+          "sourceAddress": "DB600.DBW0",
+          "sourceRow": 2
+        },
+        {
+          "name": "PLC_STATUS_STATE_101001",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2",
+          "sourceRow": 3
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101001",
+          "offset": 4,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW4",
+          "sourceRow": 4
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101001",
+          "offset": 6,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW6",
+          "sourceRow": 5,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101002",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW28",
+          "sourceRow": 6
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101002",
+          "offset": 30,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW30",
+          "sourceRow": 7
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101002",
+          "offset": 32,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW32",
+          "sourceRow": 8,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101003",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW54",
+          "sourceRow": 9
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101003",
+          "offset": 56,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW56",
+          "sourceRow": 10
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101003",
+          "offset": 58,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW58",
+          "sourceRow": 11,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101004",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW80",
+          "sourceRow": 12
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101004",
+          "offset": 82,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW82",
+          "sourceRow": 13
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101004",
+          "offset": 84,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW84",
+          "sourceRow": 14,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101005",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW106",
+          "sourceRow": 15
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101005",
+          "offset": 108,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW108",
+          "sourceRow": 16
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101005",
+          "offset": 110,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW110",
+          "sourceRow": 17,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101006",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW132",
+          "sourceRow": 18
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101006",
+          "offset": 134,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW134",
+          "sourceRow": 19
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101006",
+          "offset": 136,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW136",
+          "sourceRow": 20,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101007",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW158",
+          "sourceRow": 21
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101007",
+          "offset": 160,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW160",
+          "sourceRow": 22
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101007",
+          "offset": 162,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW162",
+          "sourceRow": 23,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101008",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW184",
+          "sourceRow": 24
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101008",
+          "offset": 186,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW186",
+          "sourceRow": 25
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101008",
+          "offset": 188,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW188",
+          "sourceRow": 26,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101009",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW210",
+          "sourceRow": 27
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101009",
+          "offset": 212,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW212",
+          "sourceRow": 28
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101009",
+          "offset": 214,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW214",
+          "sourceRow": 29,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101010",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW236",
+          "sourceRow": 30
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101010",
+          "offset": 238,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW238",
+          "sourceRow": 31
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101010",
+          "offset": 240,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW240",
+          "sourceRow": 32,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101011",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW262",
+          "sourceRow": 33
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101011",
+          "offset": 264,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW264",
+          "sourceRow": 34
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101011",
+          "offset": 266,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW266",
+          "sourceRow": 35,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101012",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW288",
+          "sourceRow": 36
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101012",
+          "offset": 290,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW290",
+          "sourceRow": 37
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101012",
+          "offset": 292,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW292",
+          "sourceRow": 38,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101013",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW314",
+          "sourceRow": 39
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101013",
+          "offset": 316,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW316",
+          "sourceRow": 40
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101013",
+          "offset": 318,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW318",
+          "sourceRow": 41,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101014",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW340",
+          "sourceRow": 42
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101014",
+          "offset": 342,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW342",
+          "sourceRow": 43
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101014",
+          "offset": 344,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW344",
+          "sourceRow": 44,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101015",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW366",
+          "sourceRow": 45
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101015",
+          "offset": 368,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW368",
+          "sourceRow": 46
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101015",
+          "offset": 370,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW370",
+          "sourceRow": 47,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101016",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW392",
+          "sourceRow": 48
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101016",
+          "offset": 394,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW394",
+          "sourceRow": 49
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101016",
+          "offset": 396,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW396",
+          "sourceRow": 50,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101017",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW418",
+          "sourceRow": 51
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101017",
+          "offset": 420,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW420",
+          "sourceRow": 52
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101017",
+          "offset": 422,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW422",
+          "sourceRow": 53,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101018",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW444",
+          "sourceRow": 54
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101018",
+          "offset": 446,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW446",
+          "sourceRow": 55
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101018",
+          "offset": 448,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW448",
+          "sourceRow": 56,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101019",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW470",
+          "sourceRow": 57
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101019",
+          "offset": 472,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW472",
+          "sourceRow": 58
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101019",
+          "offset": 474,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW474",
+          "sourceRow": 59,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101020",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW496",
+          "sourceRow": 60
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101020",
+          "offset": 498,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW498",
+          "sourceRow": 61
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101020",
+          "offset": 500,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW500",
+          "sourceRow": 62,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101021",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW522",
+          "sourceRow": 63
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101021",
+          "offset": 524,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW524",
+          "sourceRow": 64
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101021",
+          "offset": 526,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW526",
+          "sourceRow": 65,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101022",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW548",
+          "sourceRow": 66
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101022",
+          "offset": 550,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW550",
+          "sourceRow": 67
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101022",
+          "offset": 552,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW552",
+          "sourceRow": 68,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101023",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW574",
+          "sourceRow": 69
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101023",
+          "offset": 576,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW576",
+          "sourceRow": 70
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101023",
+          "offset": 578,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW578",
+          "sourceRow": 71,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101024",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW600",
+          "sourceRow": 72
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101024",
+          "offset": 602,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW602",
+          "sourceRow": 73
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101024",
+          "offset": 604,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW604",
+          "sourceRow": 74,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101025",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW626",
+          "sourceRow": 75
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101025",
+          "offset": 628,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW628",
+          "sourceRow": 76
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101025",
+          "offset": 630,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW630",
+          "sourceRow": 77,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101026",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW652",
+          "sourceRow": 78
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101026",
+          "offset": 654,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW654",
+          "sourceRow": 79
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101026",
+          "offset": 656,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW656",
+          "sourceRow": 80,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101027",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW678",
+          "sourceRow": 81
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101027",
+          "offset": 680,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW680",
+          "sourceRow": 82
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101027",
+          "offset": 682,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW682",
+          "sourceRow": 83,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101028",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW704",
+          "sourceRow": 84
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101028",
+          "offset": 706,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW706",
+          "sourceRow": 85
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101028",
+          "offset": 708,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW708",
+          "sourceRow": 86,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101029",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW730",
+          "sourceRow": 87
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101029",
+          "offset": 732,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW732",
+          "sourceRow": 88
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101029",
+          "offset": 734,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW734",
+          "sourceRow": 89,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101030",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW756",
+          "sourceRow": 90
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101030",
+          "offset": 758,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW758",
+          "sourceRow": 91
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101030",
+          "offset": 760,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW760",
+          "sourceRow": 92,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101031",
+          "offset": 782,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW782",
+          "sourceRow": 93
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101031",
+          "offset": 784,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW784",
+          "sourceRow": 94
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101031",
+          "offset": 786,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW786",
+          "sourceRow": 95,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101032",
+          "offset": 808,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW808",
+          "sourceRow": 96
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101032",
+          "offset": 810,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW810",
+          "sourceRow": 97
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101032",
+          "offset": 812,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW812",
+          "sourceRow": 98,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101033",
+          "offset": 834,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW834",
+          "sourceRow": 99
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101033",
+          "offset": 836,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW836",
+          "sourceRow": 100
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101033",
+          "offset": 838,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW838",
+          "sourceRow": 101,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101034",
+          "offset": 860,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW860",
+          "sourceRow": 102
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101034",
+          "offset": 862,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW862",
+          "sourceRow": 103
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101034",
+          "offset": 864,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW864",
+          "sourceRow": 104,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101035",
+          "offset": 886,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW886",
+          "sourceRow": 105
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101035",
+          "offset": 888,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW888",
+          "sourceRow": 106
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101035",
+          "offset": 890,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW890",
+          "sourceRow": 107,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101036",
+          "offset": 912,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW912",
+          "sourceRow": 108
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101036",
+          "offset": 914,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW914",
+          "sourceRow": 109
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101036",
+          "offset": 916,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW916",
+          "sourceRow": 110,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101037",
+          "offset": 938,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW938",
+          "sourceRow": 111
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101037",
+          "offset": 940,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW940",
+          "sourceRow": 112
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101037",
+          "offset": 942,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW942",
+          "sourceRow": 113,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101038",
+          "offset": 964,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW964",
+          "sourceRow": 114
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101038",
+          "offset": 966,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW966",
+          "sourceRow": 115
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101038",
+          "offset": 968,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW968",
+          "sourceRow": 116,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101039",
+          "offset": 990,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW990",
+          "sourceRow": 117
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101039",
+          "offset": 992,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW992",
+          "sourceRow": 118
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101039",
+          "offset": 994,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW994",
+          "sourceRow": 119,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101040",
+          "offset": 1016,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1016",
+          "sourceRow": 120
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101040",
+          "offset": 1018,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1018",
+          "sourceRow": 121
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101040",
+          "offset": 1020,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1020",
+          "sourceRow": 122,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101041",
+          "offset": 1042,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1042",
+          "sourceRow": 123
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101041",
+          "offset": 1044,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1044",
+          "sourceRow": 124
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101041",
+          "offset": 1046,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1046",
+          "sourceRow": 125,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101042",
+          "offset": 1068,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1068",
+          "sourceRow": 126
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101042",
+          "offset": 1070,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1070",
+          "sourceRow": 127
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101042",
+          "offset": 1072,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1072",
+          "sourceRow": 128,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101043",
+          "offset": 1094,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1094",
+          "sourceRow": 129
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101043",
+          "offset": 1096,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1096",
+          "sourceRow": 130
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101043",
+          "offset": 1098,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1098",
+          "sourceRow": 131,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101044",
+          "offset": 1120,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1120",
+          "sourceRow": 132
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101044",
+          "offset": 1122,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1122",
+          "sourceRow": 133
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101044",
+          "offset": 1124,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1124",
+          "sourceRow": 134,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101045",
+          "offset": 1146,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1146",
+          "sourceRow": 135
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101045",
+          "offset": 1148,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1148",
+          "sourceRow": 136
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101045",
+          "offset": 1150,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1150",
+          "sourceRow": 137,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101046",
+          "offset": 1172,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1172",
+          "sourceRow": 138
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101046",
+          "offset": 1174,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1174",
+          "sourceRow": 139
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101046",
+          "offset": 1176,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1176",
+          "sourceRow": 140,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101047",
+          "offset": 1198,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1198",
+          "sourceRow": 141
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101047",
+          "offset": 1200,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1200",
+          "sourceRow": 142
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101047",
+          "offset": 1202,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1202",
+          "sourceRow": 143,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101048",
+          "offset": 1224,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1224",
+          "sourceRow": 144
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101048",
+          "offset": 1226,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1226",
+          "sourceRow": 145
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101048",
+          "offset": 1228,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1228",
+          "sourceRow": 146,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101049",
+          "offset": 1250,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1250",
+          "sourceRow": 147
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101049",
+          "offset": 1252,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1252",
+          "sourceRow": 148
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101049",
+          "offset": 1254,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1254",
+          "sourceRow": 149,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101050",
+          "offset": 1276,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1276",
+          "sourceRow": 150
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101050",
+          "offset": 1278,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1278",
+          "sourceRow": 151
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101050",
+          "offset": 1280,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1280",
+          "sourceRow": 152,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101051",
+          "offset": 1302,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1302",
+          "sourceRow": 153
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101051",
+          "offset": 1304,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1304",
+          "sourceRow": 154
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101051",
+          "offset": 1306,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1306",
+          "sourceRow": 155,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101052",
+          "offset": 1328,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1328",
+          "sourceRow": 156
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101052",
+          "offset": 1330,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1330",
+          "sourceRow": 157
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101052",
+          "offset": 1332,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1332",
+          "sourceRow": 158,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101053",
+          "offset": 1354,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1354",
+          "sourceRow": 159
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101053",
+          "offset": 1356,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1356",
+          "sourceRow": 160
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101053",
+          "offset": 1358,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1358",
+          "sourceRow": 161,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101054",
+          "offset": 1380,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1380",
+          "sourceRow": 162
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101054",
+          "offset": 1382,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1382",
+          "sourceRow": 163
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101054",
+          "offset": 1384,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1384",
+          "sourceRow": 164,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101055",
+          "offset": 1406,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1406",
+          "sourceRow": 165
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101055",
+          "offset": 1408,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1408",
+          "sourceRow": 166
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101055",
+          "offset": 1410,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1410",
+          "sourceRow": 167,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101056",
+          "offset": 1432,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1432",
+          "sourceRow": 168
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101056",
+          "offset": 1434,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1434",
+          "sourceRow": 169
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101056",
+          "offset": 1436,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1436",
+          "sourceRow": 170,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101057",
+          "offset": 1458,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1458",
+          "sourceRow": 171
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101057",
+          "offset": 1460,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1460",
+          "sourceRow": 172
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101057",
+          "offset": 1462,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1462",
+          "sourceRow": 173,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101058",
+          "offset": 1484,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1484",
+          "sourceRow": 174
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101058",
+          "offset": 1486,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1486",
+          "sourceRow": 175
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101058",
+          "offset": 1488,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1488",
+          "sourceRow": 176,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101059",
+          "offset": 1510,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1510",
+          "sourceRow": 177
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101059",
+          "offset": 1512,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1512",
+          "sourceRow": 178
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101059",
+          "offset": 1514,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1514",
+          "sourceRow": 179,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101060",
+          "offset": 1536,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1536",
+          "sourceRow": 180
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101060",
+          "offset": 1538,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1538",
+          "sourceRow": 181
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101060",
+          "offset": 1540,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1540",
+          "sourceRow": 182,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101061",
+          "offset": 1562,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1562",
+          "sourceRow": 183
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101061",
+          "offset": 1564,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1564",
+          "sourceRow": 184
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101061",
+          "offset": 1566,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1566",
+          "sourceRow": 185,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101062",
+          "offset": 1588,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1588",
+          "sourceRow": 186
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101062",
+          "offset": 1590,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1590",
+          "sourceRow": 187
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101062",
+          "offset": 1592,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1592",
+          "sourceRow": 188,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101063",
+          "offset": 1614,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1614",
+          "sourceRow": 189
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101063",
+          "offset": 1616,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1616",
+          "sourceRow": 190
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101063",
+          "offset": 1618,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1618",
+          "sourceRow": 191,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101064",
+          "offset": 1640,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1640",
+          "sourceRow": 192
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101064",
+          "offset": 1642,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1642",
+          "sourceRow": 193
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101064",
+          "offset": 1644,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1644",
+          "sourceRow": 194,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101065",
+          "offset": 1666,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1666",
+          "sourceRow": 195
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101065",
+          "offset": 1668,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1668",
+          "sourceRow": 196
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101065",
+          "offset": 1670,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1670",
+          "sourceRow": 197,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101066",
+          "offset": 1692,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1692",
+          "sourceRow": 198
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101066",
+          "offset": 1694,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1694",
+          "sourceRow": 199
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101066",
+          "offset": 1696,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1696",
+          "sourceRow": 200,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101067",
+          "offset": 1718,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1718",
+          "sourceRow": 201
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101067",
+          "offset": 1720,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1720",
+          "sourceRow": 202
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101067",
+          "offset": 1722,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1722",
+          "sourceRow": 203,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101068",
+          "offset": 1744,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1744",
+          "sourceRow": 204
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101068",
+          "offset": 1746,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1746",
+          "sourceRow": 205
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101068",
+          "offset": 1748,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1748",
+          "sourceRow": 206,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101069",
+          "offset": 1770,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1770",
+          "sourceRow": 207
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101069",
+          "offset": 1772,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1772",
+          "sourceRow": 208
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101069",
+          "offset": 1774,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1774",
+          "sourceRow": 209,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101070",
+          "offset": 1796,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1796",
+          "sourceRow": 210
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101070",
+          "offset": 1798,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1798",
+          "sourceRow": 211
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101070",
+          "offset": 1800,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1800",
+          "sourceRow": 212,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101071",
+          "offset": 1822,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1822",
+          "sourceRow": 213
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101071",
+          "offset": 1824,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1824",
+          "sourceRow": 214
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101071",
+          "offset": 1826,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1826",
+          "sourceRow": 215,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101072",
+          "offset": 1848,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1848",
+          "sourceRow": 216
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101072",
+          "offset": 1850,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1850",
+          "sourceRow": 217
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101072",
+          "offset": 1852,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1852",
+          "sourceRow": 218,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101073",
+          "offset": 1874,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1874",
+          "sourceRow": 219
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101073",
+          "offset": 1876,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1876",
+          "sourceRow": 220
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101073",
+          "offset": 1878,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1878",
+          "sourceRow": 221,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101074",
+          "offset": 1900,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1900",
+          "sourceRow": 222
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101074",
+          "offset": 1902,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1902",
+          "sourceRow": 223
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101074",
+          "offset": 1904,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1904",
+          "sourceRow": 224,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101075",
+          "offset": 1926,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1926",
+          "sourceRow": 225
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101075",
+          "offset": 1928,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1928",
+          "sourceRow": 226
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101075",
+          "offset": 1930,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1930",
+          "sourceRow": 227,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101076",
+          "offset": 1952,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1952",
+          "sourceRow": 228
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101076",
+          "offset": 1954,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1954",
+          "sourceRow": 229
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101076",
+          "offset": 1956,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1956",
+          "sourceRow": 230,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101077",
+          "offset": 1978,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1978",
+          "sourceRow": 231
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101077",
+          "offset": 1980,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1980",
+          "sourceRow": 232
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101077",
+          "offset": 1982,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1982",
+          "sourceRow": 233,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101078",
+          "offset": 2004,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2004",
+          "sourceRow": 234
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101078",
+          "offset": 2006,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2006",
+          "sourceRow": 235
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101078",
+          "offset": 2008,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2008",
+          "sourceRow": 236,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101079",
+          "offset": 2030,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2030",
+          "sourceRow": 237
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101079",
+          "offset": 2032,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2032",
+          "sourceRow": 238
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101079",
+          "offset": 2034,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2034",
+          "sourceRow": 239,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101080",
+          "offset": 2056,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2056",
+          "sourceRow": 240
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101080",
+          "offset": 2058,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2058",
+          "sourceRow": 241
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101080",
+          "offset": 2060,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2060",
+          "sourceRow": 242,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101081",
+          "offset": 2082,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2082",
+          "sourceRow": 243
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101081",
+          "offset": 2084,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2084",
+          "sourceRow": 244
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101081",
+          "offset": 2086,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2086",
+          "sourceRow": 245,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101082",
+          "offset": 2108,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2108",
+          "sourceRow": 246
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101082",
+          "offset": 2110,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2110",
+          "sourceRow": 247
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101082",
+          "offset": 2112,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2112",
+          "sourceRow": 248,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101083",
+          "offset": 2134,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2134",
+          "sourceRow": 249
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101083",
+          "offset": 2136,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2136",
+          "sourceRow": 250
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101083",
+          "offset": 2138,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2138",
+          "sourceRow": 251,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101084",
+          "offset": 2160,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2160",
+          "sourceRow": 252
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101084",
+          "offset": 2162,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2162",
+          "sourceRow": 253
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101084",
+          "offset": 2164,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2164",
+          "sourceRow": 254,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101085",
+          "offset": 2186,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2186",
+          "sourceRow": 255
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101085",
+          "offset": 2188,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2188",
+          "sourceRow": 256
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101085",
+          "offset": 2190,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2190",
+          "sourceRow": 257,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101086",
+          "offset": 2212,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2212",
+          "sourceRow": 258
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101086",
+          "offset": 2214,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2214",
+          "sourceRow": 259
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101086",
+          "offset": 2216,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2216",
+          "sourceRow": 260,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101087",
+          "offset": 2238,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2238",
+          "sourceRow": 261
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101087",
+          "offset": 2240,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2240",
+          "sourceRow": 262
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101087",
+          "offset": 2242,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2242",
+          "sourceRow": 263,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101088",
+          "offset": 2264,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2264",
+          "sourceRow": 264
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101088",
+          "offset": 2266,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2266",
+          "sourceRow": 265
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101088",
+          "offset": 2268,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2268",
+          "sourceRow": 266,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101089",
+          "offset": 2290,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2290",
+          "sourceRow": 267
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101089",
+          "offset": 2292,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2292",
+          "sourceRow": 268
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101089",
+          "offset": 2294,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2294",
+          "sourceRow": 269,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101090",
+          "offset": 2316,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2316",
+          "sourceRow": 270
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101090",
+          "offset": 2318,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2318",
+          "sourceRow": 271
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101090",
+          "offset": 2320,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2320",
+          "sourceRow": 272,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101091",
+          "offset": 2342,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2342",
+          "sourceRow": 273
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101091",
+          "offset": 2344,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2344",
+          "sourceRow": 274
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101091",
+          "offset": 2346,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2346",
+          "sourceRow": 275,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101092",
+          "offset": 2368,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2368",
+          "sourceRow": 276
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101092",
+          "offset": 2370,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2370",
+          "sourceRow": 277
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101092",
+          "offset": 2372,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2372",
+          "sourceRow": 278,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101093",
+          "offset": 2394,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2394",
+          "sourceRow": 279
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101093",
+          "offset": 2396,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2396",
+          "sourceRow": 280
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101093",
+          "offset": 2398,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2398",
+          "sourceRow": 281,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101094",
+          "offset": 2420,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2420",
+          "sourceRow": 282
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101094",
+          "offset": 2422,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2422",
+          "sourceRow": 283
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101094",
+          "offset": 2424,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2424",
+          "sourceRow": 284,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101095",
+          "offset": 2446,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2446",
+          "sourceRow": 285
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101095",
+          "offset": 2448,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2448",
+          "sourceRow": 286
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101095",
+          "offset": 2450,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2450",
+          "sourceRow": 287,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101096",
+          "offset": 2472,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2472",
+          "sourceRow": 288
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101096",
+          "offset": 2474,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2474",
+          "sourceRow": 289
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101096",
+          "offset": 2476,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2476",
+          "sourceRow": 290,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101097",
+          "offset": 2498,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2498",
+          "sourceRow": 291
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101097",
+          "offset": 2500,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2500",
+          "sourceRow": 292
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101097",
+          "offset": 2502,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2502",
+          "sourceRow": 293,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101098",
+          "offset": 2524,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2524",
+          "sourceRow": 294
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101098",
+          "offset": 2526,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2526",
+          "sourceRow": 295
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101098",
+          "offset": 2528,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2528",
+          "sourceRow": 296,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101099",
+          "offset": 2550,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2550",
+          "sourceRow": 297
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101099",
+          "offset": 2552,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2552",
+          "sourceRow": 298
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101099",
+          "offset": 2554,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2554",
+          "sourceRow": 299,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_101100",
+          "offset": 2576,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2576",
+          "sourceRow": 300
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_101100",
+          "offset": 2578,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW2578",
+          "sourceRow": 301
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_101100",
+          "offset": 2580,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW2580",
+          "sourceRow": 302,
+          "length": 10
+        }
+      ]
+    },
+    {
+      "equipmentCode": "CV02",
+      "floor": 2,
+      "sourceFile": "C:\\Users\\HCGC\\Desktop\\2FINFO.xlsx",
+      "sourceSheet": "设备变量",
+      "sourceRange": "A2:I167",
+      "bindings": [
+        {
+          "id": "2001",
+          "sourceId": "202001",
+          "stateTag": "PLC_STATUS_STATE_202001",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202001",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202001",
+          "mapped": true
+        },
+        {
+          "id": "2002",
+          "sourceId": "202002",
+          "stateTag": "PLC_STATUS_STATE_202002",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202002",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202002",
+          "mapped": true
+        },
+        {
+          "id": "2003",
+          "sourceId": "202003",
+          "stateTag": "PLC_STATUS_STATE_202003",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202003",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202003",
+          "mapped": true
+        },
+        {
+          "id": "2004",
+          "sourceId": "202004",
+          "stateTag": "PLC_STATUS_STATE_202004",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202004",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202004",
+          "mapped": true
+        },
+        {
+          "id": "2005",
+          "sourceId": "202005",
+          "stateTag": "PLC_STATUS_STATE_202005",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202005",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202005",
+          "mapped": true
+        },
+        {
+          "id": "2006",
+          "sourceId": "202006",
+          "stateTag": "PLC_STATUS_STATE_202006",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202006",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202006",
+          "mapped": true
+        },
+        {
+          "id": "2007",
+          "sourceId": "202007",
+          "stateTag": "PLC_STATUS_STATE_202007",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202007",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202007",
+          "mapped": true
+        },
+        {
+          "id": "2008",
+          "sourceId": "202008",
+          "stateTag": "PLC_STATUS_STATE_202008",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202008",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202008",
+          "mapped": true
+        },
+        {
+          "id": "2009",
+          "sourceId": "202009",
+          "stateTag": "PLC_STATUS_STATE_202009",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202009",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202009",
+          "mapped": true
+        },
+        {
+          "id": "2010",
+          "sourceId": "202010",
+          "stateTag": "PLC_STATUS_STATE_202010",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202010",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202010",
+          "mapped": true
+        },
+        {
+          "id": "2011",
+          "sourceId": "202011",
+          "stateTag": "PLC_STATUS_STATE_202011",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202011",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202011",
+          "mapped": true
+        },
+        {
+          "id": "2012",
+          "sourceId": "202012",
+          "stateTag": "PLC_STATUS_STATE_202012",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202012",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202012",
+          "mapped": true
+        },
+        {
+          "id": "2013",
+          "sourceId": "202013",
+          "stateTag": "PLC_STATUS_STATE_202013",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202013",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202013",
+          "mapped": true
+        },
+        {
+          "id": "2014",
+          "sourceId": "202014",
+          "stateTag": "PLC_STATUS_STATE_202014",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202014",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202014",
+          "mapped": true
+        },
+        {
+          "id": "2015",
+          "sourceId": "202015",
+          "stateTag": "PLC_STATUS_STATE_202015",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202015",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202015",
+          "mapped": true
+        },
+        {
+          "id": "2016",
+          "sourceId": "202016",
+          "stateTag": "PLC_STATUS_STATE_202016",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202016",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202016",
+          "mapped": true
+        },
+        {
+          "id": "2017",
+          "sourceId": "202017",
+          "stateTag": "PLC_STATUS_STATE_202017",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202017",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202017",
+          "mapped": true
+        },
+        {
+          "id": "2018",
+          "sourceId": "202018",
+          "stateTag": "PLC_STATUS_STATE_202018",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202018",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202018",
+          "mapped": true
+        },
+        {
+          "id": "2019",
+          "sourceId": "202019",
+          "stateTag": "PLC_STATUS_STATE_202019",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202019",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202019",
+          "mapped": true
+        },
+        {
+          "id": "2020",
+          "sourceId": "202020",
+          "stateTag": "PLC_STATUS_STATE_202020",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202020",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202020",
+          "mapped": true
+        },
+        {
+          "id": "2021",
+          "sourceId": "202021",
+          "stateTag": "PLC_STATUS_STATE_202021",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202021",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202021",
+          "mapped": true
+        },
+        {
+          "id": "2022",
+          "sourceId": "202022",
+          "stateTag": "PLC_STATUS_STATE_202022",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202022",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202022",
+          "mapped": true
+        },
+        {
+          "id": "2023",
+          "sourceId": "202023",
+          "stateTag": "PLC_STATUS_STATE_202023",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202023",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202023",
+          "mapped": true
+        },
+        {
+          "id": "2024",
+          "sourceId": "202024",
+          "stateTag": "PLC_STATUS_STATE_202024",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202024",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202024",
+          "mapped": true
+        },
+        {
+          "id": "2025",
+          "sourceId": "202025",
+          "stateTag": "PLC_STATUS_STATE_202025",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202025",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202025",
+          "mapped": true
+        },
+        {
+          "id": "2026",
+          "sourceId": "202026",
+          "stateTag": "PLC_STATUS_STATE_202026",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202026",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202026",
+          "mapped": true
+        },
+        {
+          "id": "2027",
+          "sourceId": "202027",
+          "stateTag": "PLC_STATUS_STATE_202027",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202027",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202027",
+          "mapped": true
+        },
+        {
+          "id": "2028",
+          "sourceId": "202028",
+          "stateTag": "PLC_STATUS_STATE_202028",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202028",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202028",
+          "mapped": true
+        },
+        {
+          "id": "2029",
+          "sourceId": "202029",
+          "stateTag": "PLC_STATUS_STATE_202029",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202029",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202029",
+          "mapped": true
+        },
+        {
+          "id": "2030",
+          "sourceId": "202030",
+          "stateTag": "PLC_STATUS_STATE_202030",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202030",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202030",
+          "mapped": true
+        },
+        {
+          "id": "2031",
+          "sourceId": "202031",
+          "stateTag": "PLC_STATUS_STATE_202031",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202031",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202031",
+          "mapped": true
+        },
+        {
+          "id": "2032",
+          "sourceId": "202032",
+          "stateTag": "PLC_STATUS_STATE_202032",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202032",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202032",
+          "mapped": true
+        },
+        {
+          "id": "2033",
+          "sourceId": "202033",
+          "stateTag": "PLC_STATUS_STATE_202033",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202033",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202033",
+          "mapped": true
+        },
+        {
+          "id": "2034",
+          "sourceId": "202034",
+          "stateTag": "PLC_STATUS_STATE_202034",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202034",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202034",
+          "mapped": true
+        },
+        {
+          "id": "2035",
+          "sourceId": "202035",
+          "stateTag": "PLC_STATUS_STATE_202035",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202035",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202035",
+          "mapped": true
+        },
+        {
+          "id": "2036",
+          "sourceId": "202036",
+          "stateTag": "PLC_STATUS_STATE_202036",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202036",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202036",
+          "mapped": true
+        },
+        {
+          "id": "2037",
+          "sourceId": "202037",
+          "stateTag": "PLC_STATUS_STATE_202037",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202037",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202037",
+          "mapped": true
+        },
+        {
+          "id": "2038",
+          "sourceId": "202038",
+          "stateTag": "PLC_STATUS_STATE_202038",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202038",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202038",
+          "mapped": true
+        },
+        {
+          "id": "2039",
+          "sourceId": "202039",
+          "stateTag": "PLC_STATUS_STATE_202039",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202039",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202039",
+          "mapped": true
+        },
+        {
+          "id": "2040",
+          "sourceId": "202040",
+          "stateTag": "PLC_STATUS_STATE_202040",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202040",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202040",
+          "mapped": true
+        },
+        {
+          "id": "2041",
+          "sourceId": "202041",
+          "stateTag": "PLC_STATUS_STATE_202041",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202041",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202041",
+          "mapped": true
+        },
+        {
+          "id": "2042",
+          "sourceId": "202042",
+          "stateTag": "PLC_STATUS_STATE_202042",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202042",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202042",
+          "mapped": true
+        },
+        {
+          "id": "2043",
+          "sourceId": "202043",
+          "stateTag": "PLC_STATUS_STATE_202043",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202043",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202043",
+          "mapped": true
+        },
+        {
+          "id": "2044",
+          "sourceId": "202044",
+          "stateTag": "PLC_STATUS_STATE_202044",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202044",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202044",
+          "mapped": true
+        },
+        {
+          "id": "2045",
+          "sourceId": "202045",
+          "stateTag": "PLC_STATUS_STATE_202045",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202045",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202045",
+          "mapped": true
+        },
+        {
+          "id": "2046",
+          "sourceId": "202046",
+          "stateTag": "PLC_STATUS_STATE_202046",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202046",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202046",
+          "mapped": true
+        },
+        {
+          "id": "2047",
+          "sourceId": "202047",
+          "stateTag": "PLC_STATUS_STATE_202047",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202047",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202047",
+          "mapped": true
+        },
+        {
+          "id": "2048",
+          "sourceId": "202048",
+          "stateTag": "PLC_STATUS_STATE_202048",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202048",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202048",
+          "mapped": true
+        },
+        {
+          "id": "2049",
+          "sourceId": "202049",
+          "stateTag": "PLC_STATUS_STATE_202049",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202049",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202049",
+          "mapped": true
+        },
+        {
+          "id": "2050",
+          "sourceId": "202050",
+          "stateTag": "PLC_STATUS_STATE_202050",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202050",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202050",
+          "mapped": true
+        },
+        {
+          "id": "2051",
+          "sourceId": "202051",
+          "stateTag": "PLC_STATUS_STATE_202051",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202051",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202051",
+          "mapped": true
+        },
+        {
+          "id": "2052",
+          "sourceId": "202052",
+          "stateTag": "PLC_STATUS_STATE_202052",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202052",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202052",
+          "mapped": true
+        },
+        {
+          "id": "2053",
+          "sourceId": "202053",
+          "stateTag": "PLC_STATUS_STATE_202053",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202053",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202053",
+          "mapped": true
+        },
+        {
+          "id": "2054",
+          "sourceId": "202054",
+          "stateTag": "PLC_STATUS_STATE_202054",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202054",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202054",
+          "mapped": true
+        },
+        {
+          "id": "2055",
+          "sourceId": "202055",
+          "stateTag": "PLC_STATUS_STATE_202055",
+          "hasGoodsTag": "PLC_STATUS_HASGOODS_202055",
+          "trayCodeTag": "PLC_STATUS_CONTNO_202055",
+          "mapped": true
+        }
+      ],
+      "tags": [
+        {
+          "name": "PLC_STATUS_HEART",
+          "offset": 0,
+          "dataType": "UInt16",
+          "description": "心跳",
+          "sourceAddress": "DB600.DBW0",
+          "sourceRow": 2
+        },
+        {
+          "name": "PLC_STATUS_STATE_202001",
+          "offset": 2,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW2",
+          "sourceRow": 3
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202001",
+          "offset": 4,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW4",
+          "sourceRow": 4
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202001",
+          "offset": 6,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW6",
+          "sourceRow": 5,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202002",
+          "offset": 28,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW28",
+          "sourceRow": 6
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202002",
+          "offset": 30,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW30",
+          "sourceRow": 7
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202002",
+          "offset": 32,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW32",
+          "sourceRow": 8,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202003",
+          "offset": 54,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW54",
+          "sourceRow": 9
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202003",
+          "offset": 56,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW56",
+          "sourceRow": 10
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202003",
+          "offset": 58,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW58",
+          "sourceRow": 11,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202004",
+          "offset": 80,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW80",
+          "sourceRow": 12
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202004",
+          "offset": 82,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW82",
+          "sourceRow": 13
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202004",
+          "offset": 84,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW84",
+          "sourceRow": 14,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202005",
+          "offset": 106,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW106",
+          "sourceRow": 15
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202005",
+          "offset": 108,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW108",
+          "sourceRow": 16
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202005",
+          "offset": 110,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW110",
+          "sourceRow": 17,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202006",
+          "offset": 132,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW132",
+          "sourceRow": 18
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202006",
+          "offset": 134,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW134",
+          "sourceRow": 19
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202006",
+          "offset": 136,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW136",
+          "sourceRow": 20,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202007",
+          "offset": 158,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW158",
+          "sourceRow": 21
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202007",
+          "offset": 160,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW160",
+          "sourceRow": 22
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202007",
+          "offset": 162,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW162",
+          "sourceRow": 23,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202008",
+          "offset": 184,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW184",
+          "sourceRow": 24
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202008",
+          "offset": 186,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW186",
+          "sourceRow": 25
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202008",
+          "offset": 188,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW188",
+          "sourceRow": 26,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202009",
+          "offset": 210,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW210",
+          "sourceRow": 27
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202009",
+          "offset": 212,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW212",
+          "sourceRow": 28
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202009",
+          "offset": 214,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW214",
+          "sourceRow": 29,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202010",
+          "offset": 236,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW236",
+          "sourceRow": 30
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202010",
+          "offset": 238,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW238",
+          "sourceRow": 31
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202010",
+          "offset": 240,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW240",
+          "sourceRow": 32,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202011",
+          "offset": 262,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW262",
+          "sourceRow": 33
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202011",
+          "offset": 264,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW264",
+          "sourceRow": 34
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202011",
+          "offset": 266,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW266",
+          "sourceRow": 35,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202012",
+          "offset": 288,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW288",
+          "sourceRow": 36
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202012",
+          "offset": 290,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW290",
+          "sourceRow": 37
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202012",
+          "offset": 292,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW292",
+          "sourceRow": 38,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202013",
+          "offset": 314,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW314",
+          "sourceRow": 39
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202013",
+          "offset": 316,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW316",
+          "sourceRow": 40
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202013",
+          "offset": 318,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW318",
+          "sourceRow": 41,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202014",
+          "offset": 340,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW340",
+          "sourceRow": 42
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202014",
+          "offset": 342,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW342",
+          "sourceRow": 43
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202014",
+          "offset": 344,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW344",
+          "sourceRow": 44,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202015",
+          "offset": 366,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW366",
+          "sourceRow": 45
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202015",
+          "offset": 368,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW368",
+          "sourceRow": 46
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202015",
+          "offset": 370,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW370",
+          "sourceRow": 47,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202016",
+          "offset": 392,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW392",
+          "sourceRow": 48
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202016",
+          "offset": 394,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW394",
+          "sourceRow": 49
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202016",
+          "offset": 396,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW396",
+          "sourceRow": 50,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202017",
+          "offset": 418,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW418",
+          "sourceRow": 51
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202017",
+          "offset": 420,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW420",
+          "sourceRow": 52
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202017",
+          "offset": 422,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW422",
+          "sourceRow": 53,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202018",
+          "offset": 444,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW444",
+          "sourceRow": 54
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202018",
+          "offset": 446,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW446",
+          "sourceRow": 55
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202018",
+          "offset": 448,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW448",
+          "sourceRow": 56,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202019",
+          "offset": 470,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW470",
+          "sourceRow": 57
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202019",
+          "offset": 472,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW472",
+          "sourceRow": 58
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202019",
+          "offset": 474,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW474",
+          "sourceRow": 59,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202020",
+          "offset": 496,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW496",
+          "sourceRow": 60
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202020",
+          "offset": 498,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW498",
+          "sourceRow": 61
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202020",
+          "offset": 500,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW500",
+          "sourceRow": 62,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202021",
+          "offset": 522,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW522",
+          "sourceRow": 63
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202021",
+          "offset": 524,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW524",
+          "sourceRow": 64
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202021",
+          "offset": 526,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW526",
+          "sourceRow": 65,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202022",
+          "offset": 548,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW548",
+          "sourceRow": 66
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202022",
+          "offset": 550,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW550",
+          "sourceRow": 67
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202022",
+          "offset": 552,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW552",
+          "sourceRow": 68,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202023",
+          "offset": 574,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW574",
+          "sourceRow": 69
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202023",
+          "offset": 576,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW576",
+          "sourceRow": 70
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202023",
+          "offset": 578,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW578",
+          "sourceRow": 71,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202024",
+          "offset": 600,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW600",
+          "sourceRow": 72
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202024",
+          "offset": 602,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW602",
+          "sourceRow": 73
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202024",
+          "offset": 604,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW604",
+          "sourceRow": 74,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202025",
+          "offset": 626,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW626",
+          "sourceRow": 75
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202025",
+          "offset": 628,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW628",
+          "sourceRow": 76
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202025",
+          "offset": 630,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW630",
+          "sourceRow": 77,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202026",
+          "offset": 652,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW652",
+          "sourceRow": 78
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202026",
+          "offset": 654,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW654",
+          "sourceRow": 79
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202026",
+          "offset": 656,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW656",
+          "sourceRow": 80,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202027",
+          "offset": 678,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW678",
+          "sourceRow": 81
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202027",
+          "offset": 680,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW680",
+          "sourceRow": 82
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202027",
+          "offset": 682,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW682",
+          "sourceRow": 83,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202028",
+          "offset": 704,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW704",
+          "sourceRow": 84
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202028",
+          "offset": 706,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW706",
+          "sourceRow": 85
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202028",
+          "offset": 708,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW708",
+          "sourceRow": 86,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202029",
+          "offset": 730,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW730",
+          "sourceRow": 87
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202029",
+          "offset": 732,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW732",
+          "sourceRow": 88
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202029",
+          "offset": 734,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW734",
+          "sourceRow": 89,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202030",
+          "offset": 756,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW756",
+          "sourceRow": 90
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202030",
+          "offset": 758,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW758",
+          "sourceRow": 91
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202030",
+          "offset": 760,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW760",
+          "sourceRow": 92,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202031",
+          "offset": 782,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW782",
+          "sourceRow": 93
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202031",
+          "offset": 784,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW784",
+          "sourceRow": 94
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202031",
+          "offset": 786,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW786",
+          "sourceRow": 95,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202032",
+          "offset": 808,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW808",
+          "sourceRow": 96
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202032",
+          "offset": 810,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW810",
+          "sourceRow": 97
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202032",
+          "offset": 812,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW812",
+          "sourceRow": 98,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202033",
+          "offset": 834,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW834",
+          "sourceRow": 99
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202033",
+          "offset": 836,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW836",
+          "sourceRow": 100
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202033",
+          "offset": 838,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW838",
+          "sourceRow": 101,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202034",
+          "offset": 860,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW860",
+          "sourceRow": 102
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202034",
+          "offset": 862,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW862",
+          "sourceRow": 103
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202034",
+          "offset": 864,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW864",
+          "sourceRow": 104,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202035",
+          "offset": 886,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW886",
+          "sourceRow": 105
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202035",
+          "offset": 888,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW888",
+          "sourceRow": 106
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202035",
+          "offset": 890,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW890",
+          "sourceRow": 107,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202036",
+          "offset": 912,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW912",
+          "sourceRow": 108
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202036",
+          "offset": 914,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW914",
+          "sourceRow": 109
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202036",
+          "offset": 916,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW916",
+          "sourceRow": 110,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202037",
+          "offset": 938,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW938",
+          "sourceRow": 111
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202037",
+          "offset": 940,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW940",
+          "sourceRow": 112
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202037",
+          "offset": 942,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW942",
+          "sourceRow": 113,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202038",
+          "offset": 964,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW964",
+          "sourceRow": 114
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202038",
+          "offset": 966,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW966",
+          "sourceRow": 115
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202038",
+          "offset": 968,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW968",
+          "sourceRow": 116,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202039",
+          "offset": 990,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW990",
+          "sourceRow": 117
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202039",
+          "offset": 992,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW992",
+          "sourceRow": 118
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202039",
+          "offset": 994,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW994",
+          "sourceRow": 119,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202040",
+          "offset": 1016,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1016",
+          "sourceRow": 120
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202040",
+          "offset": 1018,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1018",
+          "sourceRow": 121
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202040",
+          "offset": 1020,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1020",
+          "sourceRow": 122,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202041",
+          "offset": 1042,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1042",
+          "sourceRow": 123
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202041",
+          "offset": 1044,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1044",
+          "sourceRow": 124
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202041",
+          "offset": 1046,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1046",
+          "sourceRow": 125,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202042",
+          "offset": 1068,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1068",
+          "sourceRow": 126
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202042",
+          "offset": 1070,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1070",
+          "sourceRow": 127
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202042",
+          "offset": 1072,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1072",
+          "sourceRow": 128,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202043",
+          "offset": 1094,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1094",
+          "sourceRow": 129
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202043",
+          "offset": 1096,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1096",
+          "sourceRow": 130
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202043",
+          "offset": 1098,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1098",
+          "sourceRow": 131,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202044",
+          "offset": 1120,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1120",
+          "sourceRow": 132
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202044",
+          "offset": 1122,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1122",
+          "sourceRow": 133
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202044",
+          "offset": 1124,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1124",
+          "sourceRow": 134,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202045",
+          "offset": 1146,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1146",
+          "sourceRow": 135
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202045",
+          "offset": 1148,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1148",
+          "sourceRow": 136
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202045",
+          "offset": 1150,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1150",
+          "sourceRow": 137,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202046",
+          "offset": 1172,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1172",
+          "sourceRow": 138
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202046",
+          "offset": 1174,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1174",
+          "sourceRow": 139
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202046",
+          "offset": 1176,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1176",
+          "sourceRow": 140,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202047",
+          "offset": 1198,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1198",
+          "sourceRow": 141
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202047",
+          "offset": 1200,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1200",
+          "sourceRow": 142
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202047",
+          "offset": 1202,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1202",
+          "sourceRow": 143,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202048",
+          "offset": 1224,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1224",
+          "sourceRow": 144
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202048",
+          "offset": 1226,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1226",
+          "sourceRow": 145
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202048",
+          "offset": 1228,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1228",
+          "sourceRow": 146,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202049",
+          "offset": 1250,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1250",
+          "sourceRow": 147
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202049",
+          "offset": 1252,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1252",
+          "sourceRow": 148
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202049",
+          "offset": 1254,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1254",
+          "sourceRow": 149,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202050",
+          "offset": 1276,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1276",
+          "sourceRow": 150
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202050",
+          "offset": 1278,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1278",
+          "sourceRow": 151
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202050",
+          "offset": 1280,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1280",
+          "sourceRow": 152,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202051",
+          "offset": 1302,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1302",
+          "sourceRow": 153
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202051",
+          "offset": 1304,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1304",
+          "sourceRow": 154
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202051",
+          "offset": 1306,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1306",
+          "sourceRow": 155,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202052",
+          "offset": 1328,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1328",
+          "sourceRow": 156
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202052",
+          "offset": 1330,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1330",
+          "sourceRow": 157
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202052",
+          "offset": 1332,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1332",
+          "sourceRow": 158,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202053",
+          "offset": 1354,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1354",
+          "sourceRow": 159
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202053",
+          "offset": 1356,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1356",
+          "sourceRow": 160
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202053",
+          "offset": 1358,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1358",
+          "sourceRow": 161,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202054",
+          "offset": 1380,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1380",
+          "sourceRow": 162
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202054",
+          "offset": 1382,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1382",
+          "sourceRow": 163
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202054",
+          "offset": 1384,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1384",
+          "sourceRow": 164,
+          "length": 10
+        },
+        {
+          "name": "PLC_STATUS_STATE_202055",
+          "offset": 1406,
+          "dataType": "UInt16",
+          "description": "设备状态",
+          "sourceAddress": "DB600.DBW1406",
+          "sourceRow": 165
+        },
+        {
+          "name": "PLC_STATUS_HASGOODS_202055",
+          "offset": 1408,
+          "dataType": "UInt16",
+          "description": "有无货状态",
+          "sourceAddress": "DB600.DBW1408",
+          "sourceRow": 166
+        },
+        {
+          "name": "PLC_STATUS_CONTNO_202055",
+          "offset": 1410,
+          "dataType": "String",
+          "description": "托盘条码",
+          "sourceAddress": "DB600.DBW1410",
+          "sourceRow": 167,
+          "length": 10
+        }
+      ]
+    }
+  ]
+}

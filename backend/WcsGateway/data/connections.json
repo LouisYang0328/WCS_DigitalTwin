@@ -1,0 +1,231 @@
+{
+  "version": 2,
+  "devices": [
+    {
+      "id": "plc-c74139154bc44704a0f7af7ec2c4f921",
+      "protocol": "s7",
+      "name": "CV01-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1107,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-37cd0f222bbf4044982ee2cb3d9941b3",
+          "name": "CV01 1F \u8F93\u9001\u7EBF 1\u201330",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 772,
+          "pollIntervalMs": 500,
+          "decoder": "cv01-01",
+          "enabled": true
+        },
+        {
+          "id": "db-803e7b8140254dc79245d71e51c96138",
+          "name": "CV01 1F \u8F93\u9001\u7EBF 31\u201360",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 782,
+          "readLength": 770,
+          "pollIntervalMs": 500,
+          "decoder": "cv01-02",
+          "enabled": true
+        },
+        {
+          "id": "db-3aaf7206ae1e45a8bb502499d94edf67",
+          "name": "CV01 1F \u8F93\u9001\u7EBF 61\u201390",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 1562,
+          "readLength": 770,
+          "pollIntervalMs": 500,
+          "decoder": "cv01-03",
+          "enabled": true
+        },
+        {
+          "id": "db-41c97e57a93f478d91e3265a497d8776",
+          "name": "CV01 1F \u8F93\u9001\u7EBF 91\u2013100",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 2342,
+          "readLength": 250,
+          "pollIntervalMs": 500,
+          "decoder": "cv01-04",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-96da3cee8e154cc7a7a4d030fc728d8d",
+      "protocol": "s7",
+      "name": "CV02-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1108,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-fa593a1f75ad4e3da8015d7fc2b6cb24",
+          "name": "CV02 2F \u8F93\u9001\u7EBF 1\u201330",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 772,
+          "pollIntervalMs": 500,
+          "decoder": "cv02-01",
+          "enabled": true
+        },
+        {
+          "id": "db-c82f6588f093472cb4c1ed9fec990fe6",
+          "name": "CV02 2F \u8F93\u9001\u7EBF 31\u201355",
+          "dbNumber": 600,
+          "area": "db",
+          "startAddress": 782,
+          "readLength": 640,
+          "pollIntervalMs": 500,
+          "decoder": "cv02-02",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-4448a1009a3e4aef9deaf642b1326ace",
+      "protocol": "s7",
+      "name": "TC01-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1102,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-cfc6f73900134ee590ec128ac78ddc70",
+          "name": "TC \u5806\u579B\u673A\u53CD\u9988",
+          "dbNumber": 2000,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 70,
+          "pollIntervalMs": 500,
+          "decoder": "tc",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-658420d2a8d1467fb4db7608a0d32183",
+      "protocol": "s7",
+      "name": "TC02-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1103,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-f21ae50e063c4451ad0847f8d427d8ca",
+          "name": "TC \u5806\u579B\u673A\u53CD\u9988",
+          "dbNumber": 2000,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 70,
+          "pollIntervalMs": 500,
+          "decoder": "tc",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-bd3766e28dd7435ebaf588c380b138e8",
+      "protocol": "s7",
+      "name": "TC03-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1104,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-c272b0fa402643bea7a95d8c67178859",
+          "name": "TC \u5806\u579B\u673A\u53CD\u9988",
+          "dbNumber": 2000,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 70,
+          "pollIntervalMs": 500,
+          "decoder": "tc",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-d8efeae262bc475ab36526d420651ebe",
+      "protocol": "s7",
+      "name": "TC04-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1105,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-246408c9d97f42618ddcc968d8723bf3",
+          "name": "TC \u5806\u579B\u673A\u53CD\u9988",
+          "dbNumber": 2000,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 70,
+          "pollIntervalMs": 500,
+          "decoder": "tc",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    },
+    {
+      "id": "plc-fd4c5906d92148fcb766da3795bce776",
+      "protocol": "s7",
+      "name": "TC05-SIM",
+      "ipAddress": "127.0.0.1",
+      "port": 1106,
+      "rack": 0,
+      "slot": 0,
+      "cpuType": "S7-1200",
+      "unitId": 1,
+      "blocks": [
+        {
+          "id": "db-d04da9871ea249cfbbb2c449c915f651",
+          "name": "TC \u5806\u579B\u673A\u53CD\u9988",
+          "dbNumber": 2000,
+          "area": "db",
+          "startAddress": 0,
+          "readLength": 70,
+          "pollIntervalMs": 500,
+          "decoder": "tc",
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "isS7": true
+    }
+  ]
+}

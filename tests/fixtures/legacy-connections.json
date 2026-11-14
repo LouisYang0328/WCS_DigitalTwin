@@ -1,0 +1,16 @@
+[
+  {
+    "id": "plc-legacy-migration",
+    "name": "LEGACY-PLC",
+    "ipAddress": "127.0.0.4",
+    "port": 9,
+    "rack": 0,
+    "slot": 0,
+    "cpuType": "S7-1200",
+    "dbNumber": 2000,
+    "startAddress": 0,
+    "readLength": 70,
+    "pollIntervalMs": 500,
+    "enabled": true
+  }
+]

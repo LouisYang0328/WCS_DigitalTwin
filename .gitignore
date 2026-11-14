@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+tests/artifacts/
+.vs/
+*.user
+*.log
+*.tmp
+
+web/node_modules/
+web/.vite/
+backend/WcsGateway/appsettings.Local.json

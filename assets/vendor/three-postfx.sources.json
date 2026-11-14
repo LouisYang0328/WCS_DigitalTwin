@@ -1,0 +1,30 @@
+{
+  "package": "three",
+  "version": "0.149.0",
+  "revision": "149",
+  "packageIntegrity": "sha512-tohpUxPDht0qExRLDTM8sjRLc5d9STURNrdnK3w9A+V4pxaTBfKWWT/IqtiLfg23Vfc3Z+ImNfvRw1/0CtxrkQ==",
+  "builder": "esbuild@0.25.12",
+  "runtime": "window.THREE (existing assets/three.min.js; no bundled core)",
+  "sourceModules": [
+    "https://github.com/mrdoob/three.js/blob/r149/examples/jsm/postprocessing/EffectComposer.js",
+    "https://github.com/mrdoob/three.js/blob/r149/examples/jsm/postprocessing/SSAOPass.js",
+    "https://github.com/mrdoob/three.js/blob/r149/examples/jsm/postprocessing/ShaderPass.js",
+    "https://github.com/mrdoob/three.js/blob/r149/examples/jsm/shaders/GammaCorrectionShader.js",
+    "https://github.com/mrdoob/three.js/blob/r149/examples/jsm/shaders/FXAAShader.js"
+  ],
+  "includedSourceFiles": [
+    "shaders/CopyShader.js",
+    "postprocessing/Pass.js",
+    "postprocessing/ShaderPass.js",
+    "postprocessing/MaskPass.js",
+    "postprocessing/EffectComposer.js",
+    "math/SimplexNoise.js",
+    "shaders/SSAOShader.js",
+    "postprocessing/SSAOPass.js",
+    "shaders/GammaCorrectionShader.js",
+    "shaders/FXAAShader.js"
+  ],
+  "output": "three-postfx.min.js",
+  "bytes": 44463,
+  "sha256": "edc0fadb5f256fbc1732c5c59cbcdf7bf4756c0bbd80c920430fab27bf81062e"
+}
